@@ -43,267 +43,273 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     proved unique up to unitary equivalence.
   \end{abstract}
 
-  \tableofcontents
+  \paragraph{Keywords.}
+    Emergence; non-injective projection; admissible morphisms; quaternionic rigidity; su(2); representation theory; Weil
+    representation; pair observables; Born–Infeld constraint; spectral admissibility
 
+    \clearpage
+    \tableofcontents
+
+    \clearpage
   \section{Introduction}
 
-    \subsection{The problem: existence of an admissible morphism}
+  \subsection{The problem: existence of an admissible morphism}
 
-      Paper O26~\cite{Beau2026a30} identified the pair observable $\sigma_{\mathrm{pair}}(n) =
+    Paper O26~\cite{Beau2026a30} identified the pair observable $\sigma_{\mathrm{pair}}(n) =
   \sigma_c(n) \cdot \sigma_{q-c}(n)$ as the Hilbert--Schmidt norm squared of a rank-one operator
-      in $\mathrm{End}(V_\rho)$ for some representation $\rho$ of $2I \subset \mathrm{SU}(2)$.
-      This identification rests on the existence of a morphism
-      \[
-        \Phi_{q,\rho} \colon V_q \longrightarrow V_\rho
-      \]
-      satisfying three structural constraints:
-      \begin{enumerate}
-        \item[(a)] \emph{Involution equivariance}: $\mathbb{Z}_2$-equivariance under $c \leftrightarrow
-        q - c$, the discrete realisation of $\chi \mapsto -\chi$;
-        \item[(b)] \emph{Quadratic compatibility}: $\sigma_{\mathrm{pair}}(n) \sim
-        \|\Phi_{q,\rho}(v^{(n)}_c)\|^2 \cdot \|\Phi_{q,\rho}(v^{(n)}_{q-c})\|^2$;
-        \item[(c)] \emph{Naturality}: independence from all pipeline choices; dependence on the
-        admissible structure $(\Pi, S_{\mathrm{BI}}, Q_8)$ alone.
-      \end{enumerate}
-      Paper O26 stated the existence of such a $\Phi_{q,\rho}$ as Hypothesis~4.4.
-      The present paper resolves this hypothesis.
-      The resolution is stronger than mere existence: the three constraints force a unique
-      factorisation, making $\Phi_{q,\rho}$ a \emph{structural necessity} rather than a canonical choice.
+    in $\mathrm{End}(V_\rho)$ for some representation $\rho$ of $2I \subset \mathrm{SU}(2)$.
+    This identification rests on the existence of a morphism
+    \[
+      \Phi_{q,\rho} \colon V_q \longrightarrow V_\rho
+    \]
+    satisfying three structural constraints:
+    \begin{enumerate}
+      \item[(a)] \emph{Involution equivariance}: $\mathbb{Z}_2$-equivariance under $c \leftrightarrow
+      q - c$, the discrete realisation of $\chi \mapsto -\chi$;
+      \item[(b)] \emph{Quadratic compatibility}: $\sigma_{\mathrm{pair}}(n) \sim
+      \|\Phi_{q,\rho}(v^{(n)}_c)\|^2 \cdot \|\Phi_{q,\rho}(v^{(n)}_{q-c})\|^2$;
+      \item[(c)] \emph{Naturality}: independence from all pipeline choices; dependence on the
+      admissible structure $(\Pi, S_{\mathrm{BI}}, Q_8)$ alone.
+    \end{enumerate}
+    Paper O26 stated the existence of such a $\Phi_{q,\rho}$ as Hypothesis~4.4.
+    The present paper resolves this hypothesis.
+    The resolution is stronger than mere existence: the three constraints force a unique
+    factorisation, making $\Phi_{q,\rho}$ a \emph{structural necessity} rather than a canonical choice.
 
-    \subsection{The answer: a rigidity theorem}
+  \subsection{The answer: a rigidity theorem}
 
-      The central result is the following.
-      Any morphism $\Phi_{q,\rho}$ satisfying (a)--(c) must factor through the admissible quotient
-      $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi \cap \mathrm{Ntrl}$, and the quaternionic identification
-      $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ (O23~\cite{Beau2026a27}) is forced by the interplay of
-      the three constraints.
-      No other three-dimensional or higher-dimensional real structure is compatible with all three
-      constraints simultaneously.
-      The comparison is explicit (Table~\ref{tab:candidates}):
+    The central result is the following.
+    Any morphism $\Phi_{q,\rho}$ satisfying (a)--(c) must factor through the admissible quotient
+    $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi \cap \mathrm{Ntrl}$, and the quaternionic identification
+    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ (O23~\cite{Beau2026a27}) is forced by the interplay of
+    the three constraints.
+    No other three-dimensional or higher-dimensional real structure is compatible with all three
+    constraints simultaneously.
+    The comparison is explicit (Table~\ref{tab:candidates}):
 
-      \begin{table}[h]
-        \centering
-        \begin{tabular}{lcccl}
-          \hline
-          Structure                           & (a)        & (b)        & (c)        & Verdict            \\
-          \hline
-          Abelian $\mathbb{R}^n$              & \texttimes & \texttimes & \checkmark & excluded by O23    \\
-          Standard $\mathbb{C}^n$             & \checkmark & \checkmark & \texttimes & not canonical      \\
-          Arbitrary Hilbert space             & \checkmark & \checkmark & \texttimes & pipeline-dependent \\
-          $\mathbb{H} \,/\, \mathfrak{su}(2)$ & \checkmark & \checkmark & \checkmark & unique candidate   \\
-          \hline
-        \end{tabular}
-        \caption{Compatibility of candidate target structures with constraints~(a)--(c).}
-        \label{tab:candidates}
-      \end{table}
+    \begin{table}[h]
+      \centering
+      \begin{tabular}{lcccl}
+        \hline
+        Structure                           & (a)        & (b)        & (c)        & Verdict            \\
+        \hline
+        Abelian $\mathbb{R}^n$              & \texttimes & \texttimes & \checkmark & excluded by O23    \\
+        Standard $\mathbb{C}^n$             & \checkmark & \checkmark & \texttimes & not canonical      \\
+        Arbitrary Hilbert space             & \checkmark & \checkmark & \texttimes & pipeline-dependent \\
+        $\mathbb{H} \,/\, \mathfrak{su}(2)$ & \checkmark & \checkmark & \checkmark & unique candidate   \\
+        \hline
+      \end{tabular}
+      \caption{Compatibility of candidate target structures with constraints~(a)--(c).}
+      \label{tab:candidates}
+    \end{table}
 
-    \subsection{Relation to the O-series chain}
+  \subsection{Relation to the O-series chain}
 
-      The transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$ was proved unconditionally in
-      O24~\cite{Beau2026a28}.
-      The present result adds a representation-theoretic layer to that chain:
-      \[
-        \text{emergence} \;\Rightarrow\; \text{non-injectivity} \;\Rightarrow\; \text{pair structure}
-        \;\Rightarrow\; \text{quadratic form} \;\Rightarrow\; \mathfrak{su}(2),
-      \]
-      where each implication is a theorem of the O-series (the first being the no-go theorem of
-      paper~L~\cite{Beau2026l}).
-      The exponent $\beta^*$ thereby acquires a direct representation-theoretic meaning:
-      it is the effective scaling exponent of norm growth along a trajectory in the minimal admissible
-      non-abelian sector $\mathfrak{su}(2)$.
+    The transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$ was proved unconditionally in
+    O24~\cite{Beau2026a28}.
+    The present result adds a representation-theoretic layer to that chain:
+    \[
+      \text{emergence} \;\Rightarrow\; \text{non-injectivity} \;\Rightarrow\; \text{pair structure}
+      \;\Rightarrow\; \text{quadratic form} \;\Rightarrow\; \mathfrak{su}(2),
+    \]
+    where each implication is a theorem of the O-series (the first being the no-go theorem of
+    paper~L~\cite{Beau2026l}).
+    The exponent $\beta^*$ thereby acquires a direct representation-theoretic meaning:
+    it is the effective scaling exponent of norm growth along a trajectory in the minimal admissible
+    non-abelian sector $\mathfrak{su}(2)$.
 
-    \subsection{Scope}
+  \subsection{Scope}
 
-      This paper proves the rigidity theorem (Section~\ref{sec:rigidity}) and the canonical
-      construction (Section~\ref{sec:construction}).
-      It does not execute the numerical tests of O26 (those require O25 data~\cite{Beau2026a29}).
-      It does not revisit the transfer chain, proved in O24~\cite{Beau2026a28}.
+    This paper proves the rigidity theorem (Section~\ref{sec:rigidity}) and the canonical
+    construction (Section~\ref{sec:construction}).
+    It does not execute the numerical tests of O26 (those require O25 data~\cite{Beau2026a29}).
+    It does not revisit the transfer chain, proved in O24~\cite{Beau2026a28}.
 
-    \subsection{Organisation}
+  \subsection{Organisation}
 
-      Section~\ref{sec:setup} fixes notation and recalls the relevant results from O18--O24.
-      Section~\ref{sec:exclusion} eliminates the abelian and generic Hilbert-space candidates.
-      Section~\ref{sec:rigidity} states and proves the rigidity theorem.
-      Section~\ref{sec:construction} exhibits the canonical factorisation and proves uniqueness.
-      Section~\ref{sec:chain} derives the representation-theoretic interpretation of $\beta^*$.
-      Section~\ref{sec:open} states the remaining open problem.
+    Section~\ref{sec:setup} fixes notation and recalls the relevant results from O18--O24.
+    Section~\ref{sec:exclusion} eliminates the abelian and generic Hilbert-space candidates.
+    Section~\ref{sec:rigidity} states and proves the rigidity theorem.
+    Section~\ref{sec:construction} exhibits the canonical factorisation and proves uniqueness.
+    Section~\ref{sec:chain} derives the representation-theoretic interpretation of $\beta^*$.
+    Section~\ref{sec:open} states the remaining open problem.
 
   \section{Setup and Notation}
-    \label{sec:setup}
+  \label{sec:setup}
 
-    Let $q$ be an odd prime.
-    The Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ on $\mathbb{C}^q$
-    decomposes over conjugate character pairs $\{c, q-c\}$ with $c \in (\mathbb{Z}/q\mathbb{Z})^\times$,
-    yielding blocks $V_c \simeq \mathbb{C}^q$ and $V_{q-c} \simeq \overline{V_c}$.
-    The pair space is $V_q := V_c \oplus V_{q-c}$.
+  Let $q$ be an odd prime.
+  The Weil representation of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ on $\mathbb{C}^q$
+  decomposes over conjugate character pairs $\{c, q-c\}$ with $c \in (\mathbb{Z}/q\mathbb{Z})^\times$,
+  yielding blocks $V_c \simeq \mathbb{C}^q$ and $V_{q-c} \simeq \overline{V_c}$.
+  The pair space is $V_q := V_c \oplus V_{q-c}$.
 
-    The parity involution $\chi \mapsto -\chi$, derived in O18~\cite{Beau2026a22} from the
-    Born--Infeld evenness of the substrate action, acts on $V_q$ by complex conjugation:
-    $V_{q-c} \simeq \overline{V_c}$.
-    The canonical pair observable (O19~\cite{Beau2026a23}) is
+  The parity involution $\chi \mapsto -\chi$, derived in O18~\cite{Beau2026a22} from the
+  Born--Infeld evenness of the substrate action, acts on $V_q$ by complex conjugation:
+  $V_{q-c} \simeq \overline{V_c}$.
+  The canonical pair observable (O19~\cite{Beau2026a23}) is
+  \[
+    \sigma_{\mathrm{pair}}(n) := \sigma_c(n) \cdot \sigma_{q-c}(n),
+    \qquad \sigma_c(n) = \delta r_n / |S_n|.
+  \]
+
+  The admissible neutral traceless sector is
+  \[
+    H_{\mathrm{eff}} := \mathrm{Im}\,\Pi \cap \mathrm{Ntrl},
+  \]
+  with $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ by O23 Theorem~3.2~\cite{Beau2026a27}, together
+  with the quaternionic identification
+  \[
+    \iota \colon H_{\mathrm{eff}} \xrightarrow{\;\simeq\;} \mathfrak{su}(2),
+  \]
+  canonical and unique up to $\mathrm{SU}(2)$-conjugacy.
+  The admissibility thread $Q_8 \subset 2I \subset \mathrm{SU}(2)$ selects a spin-$\tfrac{1}{2}$
+  representation $\rho$ as the minimal non-abelian candidate (O26~\cite{Beau2026a30},
+  Section~3.3).
+
+  \begin{definition}[Naturality with respect to admissibility]
+    \label{def:naturality}
+    A morphism $\Phi \colon V_q \to W$ is \emph{natural with respect to admissibility} if it is
+    invariant under all admissible endomorphisms of $V_q$, i.e.\ under every linear map
+    $f \colon V_q \to V_q$ that preserves $\Pi$-admissibility in the sense that
+    $f(\ker \Pi_{\mathrm{adm}}) \subseteq \ker \Pi_{\mathrm{adm}}$.
+    Equivalently, $\Phi$ is natural if it depends only on the admissible structure
+    $(\Pi, S_{\mathrm{BI}}, Q_8)$ and not on any auxiliary choice of basis, BFS block,
+    or Gram--Schmidt frame.
+  \end{definition}
+
+  Throughout, $V_\rho$ denotes a complex representation space of $2I$ of dimension $d_\rho$,
+  endowed with its natural Hilbert structure.
+
+  \begin{remark}[Non-arbitrariness of $\rho$ via the admissibility thread]
+    \label{rem:thread}
+    The representation $\rho$ is not chosen freely.
+    The admissibility thread
     \[
-      \sigma_{\mathrm{pair}}(n) := \sigma_c(n) \cdot \sigma_{q-c}(n),
-      \qquad \sigma_c(n) = \delta r_n / |S_n|.
+      Q_8 \;\subset\; 2I \;\subset\; \mathrm{SU}(2)
     \]
-
-    The admissible neutral traceless sector is
-    \[
-      H_{\mathrm{eff}} := \mathrm{Im}\,\Pi \cap \mathrm{Ntrl},
-    \]
-    with $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ by O23 Theorem~3.2~\cite{Beau2026a27}, together
-    with the quaternionic identification
-    \[
-      \iota \colon H_{\mathrm{eff}} \xrightarrow{\;\simeq\;} \mathfrak{su}(2),
-    \]
-    canonical and unique up to $\mathrm{SU}(2)$-conjugacy.
-    The admissibility thread $Q_8 \subset 2I \subset \mathrm{SU}(2)$ selects a spin-$\tfrac{1}{2}$
-    representation $\rho$ as the minimal non-abelian candidate (O26~\cite{Beau2026a30},
-    Section~3.3).
-
-    \begin{definition}[Naturality with respect to admissibility]
-      \label{def:naturality}
-      A morphism $\Phi \colon V_q \to W$ is \emph{natural with respect to admissibility} if it is
-      invariant under all admissible endomorphisms of $V_q$, i.e.\ under every linear map
-      $f \colon V_q \to V_q$ that preserves $\Pi$-admissibility in the sense that
-      $f(\ker \Pi_{\mathrm{adm}}) \subseteq \ker \Pi_{\mathrm{adm}}$.
-      Equivalently, $\Phi$ is natural if it depends only on the admissible structure
-      $(\Pi, S_{\mathrm{BI}}, Q_8)$ and not on any auxiliary choice of basis, BFS block,
-      or Gram--Schmidt frame.
-    \end{definition}
-
-    Throughout, $V_\rho$ denotes a complex representation space of $2I$ of dimension $d_\rho$,
-    endowed with its natural Hilbert structure.
-
-    \begin{remark}[Non-arbitrariness of $\rho$ via the admissibility thread]
-      \label{rem:thread}
-      The representation $\rho$ is not chosen freely.
-      The admissibility thread
-      \[
-        Q_8 \;\subset\; 2I \;\subset\; \mathrm{SU}(2)
-      \]
-      is imposed structurally: $Q_8$ is the minimal non-abelian finite subgroup of $\mathrm{SU}(2)$
-      compatible with bounded-flux admissibility~\cite{Beau2026a1}; $2I$ is the maximal admissible
-      finite subgroup, distinguished by the isotropy of its second-moment tensor among all binary
-      polyhedral groups~\cite{Beau2026a2}; and the LPS family provides the Ramanujan approximation
-      to $\mathrm{SU}(2)$ in the large-$q$ limit~\cite{Beau2026a1}.
-      The spin-$\tfrac{1}{2}$ sector is selected because $Q_8 \subset 2I$ acts on $V_{\rho_{1/2}}
-      \simeq \mathbb{C}^2$ as the minimal non-abelian representation, yielding the smallest
-      non-trivial Laplacian eigenvalue $\lambda_{\rho_4} = 6 < 8 = \lambda_{\mathrm{ab}}$ and hence
-      the widest admissibility window~\cite{Beau2026a1,Beau2026a30}.
-      The choice of $\rho$ is therefore an output of the admissibility hierarchy, not an input.
-    \end{remark}
+    is imposed structurally: $Q_8$ is the minimal non-abelian finite subgroup of $\mathrm{SU}(2)$
+    compatible with bounded-flux admissibility~\cite{Beau2026a1}; $2I$ is the maximal admissible
+    finite subgroup, distinguished by the isotropy of its second-moment tensor among all binary
+    polyhedral groups~\cite{Beau2026a2}; and the LPS family provides the Ramanujan approximation
+    to $\mathrm{SU}(2)$ in the large-$q$ limit~\cite{Beau2026a1}.
+    The spin-$\tfrac{1}{2}$ sector is selected because $Q_8 \subset 2I$ acts on $V_{\rho_{1/2}}
+    \simeq \mathbb{C}^2$ as the minimal non-abelian representation, yielding the smallest
+    non-trivial Laplacian eigenvalue $\lambda_{\rho_4} = 6 < 8 = \lambda_{\mathrm{ab}}$ and hence
+    the widest admissibility window~\cite{Beau2026a1,Beau2026a30}.
+    The choice of $\rho$ is therefore an output of the admissibility hierarchy, not an input.
+  \end{remark}
 
   \section{Elimination of Non-Quaternionic Candidates}
-    \label{sec:exclusion}
+  \label{sec:exclusion}
 
-    We show that no candidate target structure other than $\mathfrak{su}(2)$ is compatible with
-    all three constraints.
+  We show that no candidate target structure other than $\mathfrak{su}(2)$ is compatible with
+  all three constraints.
 
-    \begin{proposition}[Abelian structures are excluded]
-      \label{prop:abelian}
-      No abelian target $V_\rho$ satisfies conditions~(a), (b), and~(c) simultaneously.
-    \end{proposition}
+  \begin{proposition}[Abelian structures are excluded]
+    \label{prop:abelian}
+    No abelian target $V_\rho$ satisfies conditions~(a), (b), and~(c) simultaneously.
+  \end{proposition}
 
-    \begin{proof}
-      Condition~(c) forces $\Phi_{q,\rho}$ to factor through $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi \cap
-      \mathrm{Ntrl}$.
-      By O23 Theorem~3.2~\cite{Beau2026a27}, $H_{\mathrm{eff}}$ is quaternionic and its real rank is
-      exactly 3, maximal among all admissible associative structures compatible with the Born--Infeld
-      parity.
-      An abelian target would require $H_{\mathrm{eff}}$ to split as a direct sum of
-      one-dimensional real factors, contradicting the non-commutativity of the quaternionic structure.
-    \end{proof}
+  \begin{proof}
+    Condition~(c) forces $\Phi_{q,\rho}$ to factor through $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi \cap
+    \mathrm{Ntrl}$.
+    By O23 Theorem~3.2~\cite{Beau2026a27}, $H_{\mathrm{eff}}$ is quaternionic and its real rank is
+    exactly 3, maximal among all admissible associative structures compatible with the Born--Infeld
+    parity.
+    An abelian target would require $H_{\mathrm{eff}}$ to split as a direct sum of
+    one-dimensional real factors, contradicting the non-commutativity of the quaternionic structure.
+  \end{proof}
 
-    \begin{proposition}[Generic complex Hilbert spaces are not canonical]
-      \label{prop:hilbert}
-      A morphism $\Phi_{q,\rho}$ targeting an arbitrary complex Hilbert space $\mathcal{H}$ can satisfy
-      conditions~(a) and~(b) but cannot satisfy condition~(c) unless $\mathcal{H}$ admits a quaternionic
-      structure compatible with admissibility.
-    \end{proposition}
+  \begin{proposition}[Generic complex Hilbert spaces are not canonical]
+    \label{prop:hilbert}
+    A morphism $\Phi_{q,\rho}$ targeting an arbitrary complex Hilbert space $\mathcal{H}$ can satisfy
+    conditions~(a) and~(b) but cannot satisfy condition~(c) unless $\mathcal{H}$ admits a quaternionic
+    structure compatible with admissibility.
+  \end{proposition}
 
-    \begin{proof}
-      Conditions~(a) and~(b) can be satisfied by any space admitting a conjugation and a norm,
-      hence in particular by any $\mathcal{H}$.
-      Condition~(c) requires that $\Phi_{q,\rho}$ depend only on $(\Pi, S_{\mathrm{BI}}, Q_8)$.
-      Any such morphism must factor through the admissible quotient $\pi \colon V_q \to H_{\mathrm{eff}}$
-      (universality of the admissible quotient; see Lemma~\ref{lem:quotient}).
-      The image $H_{\mathrm{eff}}$ is three-dimensional and quaternionic.
-      A morphism $H_{\mathrm{eff}} \to \mathcal{H}$ that is natural with respect to admissibility must
-      intertwine the $\mathrm{SU}(2)$-action, hence it is a morphism of representations.
-      By Schur's lemma, such a morphism exists and is canonical only when $\mathcal{H}$ contains
-      $V_\rho$ as an $\mathrm{SU}(2)$-subrepresentation, i.e.\ when $\mathcal{H}$ carries a
-      compatible quaternionic structure.
-    \end{proof}
+  \begin{proof}
+    Conditions~(a) and~(b) can be satisfied by any space admitting a conjugation and a norm,
+    hence in particular by any $\mathcal{H}$.
+    Condition~(c) requires that $\Phi_{q,\rho}$ depend only on $(\Pi, S_{\mathrm{BI}}, Q_8)$.
+    Any such morphism must factor through the admissible quotient $\pi \colon V_q \to H_{\mathrm{eff}}$
+    (universality of the admissible quotient; see Lemma~\ref{lem:quotient}).
+    The image $H_{\mathrm{eff}}$ is three-dimensional and quaternionic.
+    A morphism $H_{\mathrm{eff}} \to \mathcal{H}$ that is natural with respect to admissibility must
+    intertwine the $\mathrm{SU}(2)$-action, hence it is a morphism of representations.
+    By Schur's lemma, such a morphism exists and is canonical only when $\mathcal{H}$ contains
+    $V_\rho$ as an $\mathrm{SU}(2)$-subrepresentation, i.e.\ when $\mathcal{H}$ carries a
+    compatible quaternionic structure.
+  \end{proof}
 
-    \begin{lemma}[Universality of the admissible quotient]
-      \label{lem:quotient}
-      Let $\pi \colon V_q \twoheadrightarrow H_{\mathrm{eff}} = V_q / \ker \Pi_{\mathrm{adm}}$ be the
-      admissible quotient map.
-      Any morphism $\Phi \colon V_q \to W$ satisfying condition~(c) factors uniquely through $\pi$:
-      there exists $\bar{\Phi} \colon H_{\mathrm{eff}} \to W$ such that $\Phi = \bar{\Phi} \circ \pi$.
-    \end{lemma}
+  \begin{lemma}[Universality of the admissible quotient]
+    \label{lem:quotient}
+    Let $\pi \colon V_q \twoheadrightarrow H_{\mathrm{eff}} = V_q / \ker \Pi_{\mathrm{adm}}$ be the
+    admissible quotient map.
+    Any morphism $\Phi \colon V_q \to W$ satisfying condition~(c) factors uniquely through $\pi$:
+    there exists $\bar{\Phi} \colon H_{\mathrm{eff}} \to W$ such that $\Phi = \bar{\Phi} \circ \pi$.
+  \end{lemma}
 
-    \begin{proof}
-      Condition~(c) states that $\Phi$ depends only on the admissible structure.
-      The kernel $\ker \Pi_{\mathrm{adm}}$ consists precisely of the directions invisible to
-      admissible observables.
-      Any morphism that is natural with respect to admissibility must vanish on $\ker
-      \Pi_{\mathrm{adm}}$, for otherwise it would distinguish substrate configurations that are
-      admissibility-equivalent.
-      Vanishing on $\ker \Pi_{\mathrm{adm}}$ is exactly the factorisation condition through $\pi$.
-    \end{proof}
+  \begin{proof}
+    Condition~(c) states that $\Phi$ depends only on the admissible structure.
+    The kernel $\ker \Pi_{\mathrm{adm}}$ consists precisely of the directions invisible to
+    admissible observables.
+    Any morphism that is natural with respect to admissibility must vanish on $\ker
+    \Pi_{\mathrm{adm}}$, for otherwise it would distinguish substrate configurations that are
+    admissibility-equivalent.
+    Vanishing on $\ker \Pi_{\mathrm{adm}}$ is exactly the factorisation condition through $\pi$.
+  \end{proof}
 
   \section{Rigidity Theorem}
-    \label{sec:rigidity}
+  \label{sec:rigidity}
 
-    \begin{theorem}[Quaternionic rigidity]
-      \label{thm:rigidity}
-      Let $\Phi_{q,\rho} \colon V_q \to V_\rho$ be any morphism satisfying conditions~(a)--(c).
-      Then:
-      \begin{enumerate}
-        \item[(i)] $\Phi_{q,\rho}$ factors through the admissible quotient $\pi \colon V_q \to
-        H_{\mathrm{eff}}$;
-        \item[(ii)] the intermediate space $H_{\mathrm{eff}}$ is necessarily isomorphic to $\mathfrak{su}(2)$
-        as a real Lie algebra, via the quaternionic identification $\iota$ of
-        O23~\cite{Beau2026a27};
-        \item[(iii)] the target $V_\rho$ is necessarily an $\mathrm{SU}(2)$-representation space, and
-        the morphism $H_{\mathrm{eff}} \to V_\rho$ is a representation morphism.
-      \end{enumerate}
-      In particular, under constraints~(a)--(c), any admissible morphism $\Phi_{q,\rho}$ necessarily
-      factors through a three-dimensional real Lie algebra isomorphic to $\mathfrak{su}(2)$.
-      The quaternionic structure is not a modelling choice but the unique fixed point of the
-      three constraints.
-      In particular, the result is independent of the specific Weil realisation of
-      $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and holds for any admissible representation of the pair
-      structure satisfying~(a)--(c), whatever the underlying group or prime~$q$.
-    \end{theorem}
+  \begin{theorem}[Quaternionic rigidity]
+    \label{thm:rigidity}
+    Let $\Phi_{q,\rho} \colon V_q \to V_\rho$ be any morphism satisfying conditions~(a)--(c).
+    Then:
+    \begin{enumerate}
+      \item[(i)] $\Phi_{q,\rho}$ factors through the admissible quotient $\pi \colon V_q \to
+      H_{\mathrm{eff}}$;
+      \item[(ii)] the intermediate space $H_{\mathrm{eff}}$ is necessarily isomorphic to $\mathfrak{su}(2)$
+      as a real Lie algebra, via the quaternionic identification $\iota$ of
+      O23~\cite{Beau2026a27};
+      \item[(iii)] the target $V_\rho$ is necessarily an $\mathrm{SU}(2)$-representation space, and
+      the morphism $H_{\mathrm{eff}} \to V_\rho$ is a representation morphism.
+    \end{enumerate}
+    In particular, under constraints~(a)--(c), any admissible morphism $\Phi_{q,\rho}$ necessarily
+    factors through a three-dimensional real Lie algebra isomorphic to $\mathfrak{su}(2)$.
+    The quaternionic structure is not a modelling choice but the unique fixed point of the
+    three constraints.
+    In particular, the result is independent of the specific Weil realisation of
+    $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and holds for any admissible representation of the pair
+    structure satisfying~(a)--(c), whatever the underlying group or prime~$q$.
+  \end{theorem}
 
-    \begin{proof}
-      \textbf{Part~(i).}
-      Follows immediately from Lemma~\ref{lem:quotient}: condition~(c) forces factorisation through
-      $\pi$.
+  \begin{proof}
+    \textbf{Part~(i).}
+    Follows immediately from Lemma~\ref{lem:quotient}: condition~(c) forces factorisation through
+    $\pi$.
 
-      \textbf{Part~(ii).}
-      After factorisation, $\bar{\Phi} \colon H_{\mathrm{eff}} \to V_\rho$ must be natural with
-      respect to the Born--Infeld admissibility.
-      The only admissible automorphisms of $H_{\mathrm{eff}}$ are those compatible with the
-      Born--Infeld parity (condition~(a)) and the quadratic norm (condition~(b)).
-      By O23 Theorem~3.2~\cite{Beau2026a27}, the group of such automorphisms is $\mathrm{SU}(2)$,
-      acting on $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ by the adjoint action.
-      No other Lie group structure on a three-dimensional real space is compatible with both
-      the conjugation involution of~(a) and the positive-definite quadratic form of~(b) simultaneously;
-      this is the classical uniqueness of $\mathbb{H}$ as the only normed associative real division
-      algebra of dimension greater than~2 (Frobenius theorem).
-      Hence $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ is forced.
+    \textbf{Part~(ii).}
+    After factorisation, $\bar{\Phi} \colon H_{\mathrm{eff}} \to V_\rho$ must be natural with
+    respect to the Born--Infeld admissibility.
+    The only admissible automorphisms of $H_{\mathrm{eff}}$ are those compatible with the
+    Born--Infeld parity (condition~(a)) and the quadratic norm (condition~(b)).
+    By O23 Theorem~3.2~\cite{Beau2026a27}, the group of such automorphisms is $\mathrm{SU}(2)$,
+    acting on $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ by the adjoint action.
+    No other Lie group structure on a three-dimensional real space is compatible with both
+    the conjugation involution of~(a) and the positive-definite quadratic form of~(b) simultaneously;
+    this is the classical uniqueness of $\mathbb{H}$ as the only normed associative real division
+    algebra of dimension greater than~2 (Frobenius theorem).
+    Hence $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ is forced.
 
-      \textbf{Part~(iii).}
-      A natural morphism $\bar{\Phi} \colon \mathfrak{su}(2) \to V_\rho$ must intertwine the
-      $\mathrm{SU}(2)$-action.
-      By Schur's lemma, such a morphism exists and is non-zero only when $V_\rho$ contains an
-      irreducible $\mathrm{SU}(2)$-subrepresentation; it is then a morphism of representations.
-    \end{proof}
+    \textbf{Part~(iii).}
+    A natural morphism $\bar{\Phi} \colon \mathfrak{su}(2) \to V_\rho$ must intertwine the
+    $\mathrm{SU}(2)$-action.
+    By Schur's lemma, such a morphism exists and is non-zero only when $V_\rho$ contains an
+    irreducible $\mathrm{SU}(2)$-subrepresentation; it is then a morphism of representations.
+  \end{proof}
 
-    \begin{remark}[Relation to O23]
+  \begin{remark}[Relation to O23]
 O23~\cite{Beau2026a27} established that $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$.
 Theorem~\ref{thm:rigidity} upgrades this from a dimension statement to a \emph{categorical
 universality} statement: $\mathfrak{su}(2)$ is the unique minimal admissible target through
@@ -311,9 +317,9 @@ which every morphism satisfying~(a)--(c) must factor.
 The integer~3 is not an accident of the Weil representation: it is the unique dimension
 compatible with the simultaneous constraints of involution, quadratic form, and
 associativity required by naturality.
-    \end{remark}
+  \end{remark}
 
-    \begin{remark}[Frobenius and admissibility]
+  \begin{remark}[Frobenius and admissibility]
 The appeal to the Frobenius theorem in Part~(ii) is not circular.
 Frobenius establishes that $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ are the only normed real
 associative division algebras.
@@ -327,71 +333,71 @@ The unique compatible structure is therefore $\mathrm{Im}\,\mathbb{H} \simeq \ma
 The argument uses only the algebraic consequences of constraints~(a)--(c) and the
 dimension bound of O23; it does not depend on the Heisenberg group structure or on
 properties specific to any prime $q$.
-    \end{remark}
+  \end{remark}
 
   \section{Canonical Construction and Uniqueness}
-    \label{sec:construction}
+  \label{sec:construction}
 
-    \begin{definition}[Canonical admissible morphism]
-      \label{def:Phi}
-      Define
-      \[
-        \Phi_{q,\rho} \;:=\; \rho \circ \iota \circ \pi,
-      \]
-      where $\pi \colon V_q \to H_{\mathrm{eff}}$ is the admissible quotient map, $\iota \colon
-      H_{\mathrm{eff}} \xrightarrow{\,\simeq\,} \mathfrak{su}(2)$ is the canonical quaternionic
-      identification of O23, and $\rho \colon \mathfrak{su}(2) \to \mathrm{End}(V_\rho)$ is the
-      Lie algebra action of the chosen irreducible $\mathrm{SU}(2)$-representation.
-    \end{definition}
+  \begin{definition}[Canonical admissible morphism]
+    \label{def:Phi}
+    Define
+    \[
+      \Phi_{q,\rho} \;:=\; \rho \circ \iota \circ \pi,
+    \]
+    where $\pi \colon V_q \to H_{\mathrm{eff}}$ is the admissible quotient map, $\iota \colon
+    H_{\mathrm{eff}} \xrightarrow{\,\simeq\,} \mathfrak{su}(2)$ is the canonical quaternionic
+    identification of O23, and $\rho \colon \mathfrak{su}(2) \to \mathrm{End}(V_\rho)$ is the
+    Lie algebra action of the chosen irreducible $\mathrm{SU}(2)$-representation.
+  \end{definition}
 
-    \begin{theorem}[Existence, conditions, and uniqueness]
-      \label{thm:main}
-      The morphism $\Phi_{q,\rho}$ of Definition~\ref{def:Phi} satisfies conditions~(a)--(c).
-      It is the unique morphism doing so, up to unitary equivalence: any other such morphism is of
-      the form $U \circ \Phi_{q,\rho}$ for some unitary $U \in \mathrm{U}(V_\rho)$ commuting with
-      the $Q_8$-action.
-    \end{theorem}
+  \begin{theorem}[Existence, conditions, and uniqueness]
+    \label{thm:main}
+    The morphism $\Phi_{q,\rho}$ of Definition~\ref{def:Phi} satisfies conditions~(a)--(c).
+    It is the unique morphism doing so, up to unitary equivalence: any other such morphism is of
+    the form $U \circ \Phi_{q,\rho}$ for some unitary $U \in \mathrm{U}(V_\rho)$ commuting with
+    the $Q_8$-action.
+  \end{theorem}
 
-    \begin{proof}
-      \textbf{Conditions.}
-      (a) The involution $\chi \mapsto -\chi$ acts on $\mathfrak{su}(2)$ by $X \mapsto -X$, hence on
-      $V_\rho$ by $\rho(-X) = -\rho(X)$; the $\mathbb{Z}_2$-equivariance is preserved at each stage.
-      (b) The norm $\|\Phi_{q,\rho}(v)\|^2 = \|\rho(\iota(\pi(v)))\|^2_{V_\rho}$ recovers the
-      quadratic structure of $\sigma_{\mathrm{pair}}$ since $\pi$ preserves the norm class, $\iota$
-      is an isometry up to a fixed scale, and $\rho$ is unitary.
-      (c) Each factor $\pi$, $\iota$, $\rho$ depends only on $(\Pi, S_{\mathrm{BI}}, Q_8)$, by
-      Lemma~\ref{lem:quotient}, O23, and the admissibility thread respectively.
+  \begin{proof}
+    \textbf{Conditions.}
+    (a) The involution $\chi \mapsto -\chi$ acts on $\mathfrak{su}(2)$ by $X \mapsto -X$, hence on
+    $V_\rho$ by $\rho(-X) = -\rho(X)$; the $\mathbb{Z}_2$-equivariance is preserved at each stage.
+    (b) The norm $\|\Phi_{q,\rho}(v)\|^2 = \|\rho(\iota(\pi(v)))\|^2_{V_\rho}$ recovers the
+    quadratic structure of $\sigma_{\mathrm{pair}}$ since $\pi$ preserves the norm class, $\iota$
+    is an isometry up to a fixed scale, and $\rho$ is unitary.
+    (c) Each factor $\pi$, $\iota$, $\rho$ depends only on $(\Pi, S_{\mathrm{BI}}, Q_8)$, by
+    Lemma~\ref{lem:quotient}, O23, and the admissibility thread respectively.
 
-      \textbf{Uniqueness.}
-      By Theorem~\ref{thm:rigidity}, any $\Phi'_{q,\rho}$ satisfying (a)--(c) factors as
-      $\rho' \circ \iota \circ \pi$ for some representation morphism $\rho'$.
-      The ambiguity in $\iota$ is $\mathrm{SU}(2)$-conjugacy, which is unobservable in
-      $\|\Phi_{q,\rho}(\cdot)\|^2$.
-      The ambiguity in $\rho'$ versus $\rho$ is, by Schur's lemma, a unitary $U$ commuting with
-      the $Q_8$-action.
-    \end{proof}
+    \textbf{Uniqueness.}
+    By Theorem~\ref{thm:rigidity}, any $\Phi'_{q,\rho}$ satisfying (a)--(c) factors as
+    $\rho' \circ \iota \circ \pi$ for some representation morphism $\rho'$.
+    The ambiguity in $\iota$ is $\mathrm{SU}(2)$-conjugacy, which is unobservable in
+    $\|\Phi_{q,\rho}(\cdot)\|^2$.
+    The ambiguity in $\rho'$ versus $\rho$ is, by Schur's lemma, a unitary $U$ commuting with
+    the $Q_8$-action.
+  \end{proof}
 
   \section{Representation-Theoretic Interpretation of $\beta^*$}
-    \label{sec:chain}
+  \label{sec:chain}
 
-    Under Theorem~\ref{thm:main}, the pair observable satisfies
-    \[
-      \sigma_{\mathrm{pair}}(n) \;\sim\; \bigl\|\Phi_{q,\rho}(v^{(n)}_c) \otimes
-      \Phi_{q,\rho}(v^{(n)}_{q-c})\bigr\|^2_{\mathrm{HS}},
-    \]
-    realising $\delta_{\mathrm{pair}}$ as the growth exponent of a Hilbert--Schmidt norm along a
-    trajectory $(\widetilde{M}^{(n)})_{n \geq 0}$ in $\mathrm{End}(V_\rho)$.
+  Under Theorem~\ref{thm:main}, the pair observable satisfies
+  \[
+    \sigma_{\mathrm{pair}}(n) \;\sim\; \bigl\|\Phi_{q,\rho}(v^{(n)}_c) \otimes
+    \Phi_{q,\rho}(v^{(n)}_{q-c})\bigr\|^2_{\mathrm{HS}},
+  \]
+  realising $\delta_{\mathrm{pair}}$ as the growth exponent of a Hilbert--Schmidt norm along a
+  trajectory $(\widetilde{M}^{(n)})_{n \geq 0}$ in $\mathrm{End}(V_\rho)$.
 
-    \begin{corollary}[Representation-theoretic meaning of $\beta^*$]
-      \label{cor:beta}
-      Under the unconditional transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$ of
-      O24~\cite{Beau2026a28}, the exponent $\beta^*$ is the effective scaling exponent of norm growth
-      in the minimal admissible non-abelian sector $\mathfrak{su}(2)$.
-      The phenomenological window $\beta^* \in (0.09, 0.13)$ is a constraint on admissible
-      trajectories in the representation space $\mathrm{End}(V_\rho)$, not a purely numerical fit.
-    \end{corollary}
+  \begin{corollary}[Representation-theoretic meaning of $\beta^*$]
+    \label{cor:beta}
+    Under the unconditional transfer $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$ of
+    O24~\cite{Beau2026a28}, the exponent $\beta^*$ is the effective scaling exponent of norm growth
+    in the minimal admissible non-abelian sector $\mathfrak{su}(2)$.
+    The phenomenological window $\beta^* \in (0.09, 0.13)$ is a constraint on admissible
+    trajectories in the representation space $\mathrm{End}(V_\rho)$, not a purely numerical fit.
+  \end{corollary}
 
-    \begin{remark}[Completeness of the chain]
+  \begin{remark}[Completeness of the chain]
 The full implication chain is now:
 \[
   \text{emergence} \;\Rightarrow\; \text{non-injectivity}~\text{\cite{Beau2026l}}
@@ -401,29 +407,29 @@ The full implication chain is now:
 \]
 Each arrow is a proved result of the O-series or companion paper programme.
 No arrow is an assumption.
-    \end{remark}
+  \end{remark}
 
   \section{Remaining Open Problem}
-    \label{sec:open}
+  \label{sec:open}
 
-    Theorem~\ref{thm:rigidity} establishes the structure of $\Phi_{q,\rho}$ unconditionally.
-    The single remaining open question in the representation-theoretic component of the O-series is
-    the numerical identification of the correct irreducible sector: which value of $d_\rho$ is
-    realised by $\mathrm{O25}$ data?
+  Theorem~\ref{thm:rigidity} establishes the structure of $\Phi_{q,\rho}$ unconditionally.
+  The single remaining open question in the representation-theoretic component of the O-series is
+  the numerical identification of the correct irreducible sector: which value of $d_\rho$ is
+  realised by $\mathrm{O25}$ data?
 
-    The spin-$\tfrac{1}{2}$ candidate ($d_\rho = 2$) predicts effective dimension $r_{\mathrm{eff}} =
+  The spin-$\tfrac{1}{2}$ candidate ($d_\rho = 2$) predicts effective dimension $r_{\mathrm{eff}} =
   d_\rho^2 = 4$ in the covariance test of O26 Criterion~5.4~\cite{Beau2026a30}.
-    A different fixed value $r_{\mathrm{eff}} = d_\rho^2 \neq 4$ would identify an alternative
-    irreducible sector without invalidating the rigidity theorem, since
-    Theorem~\ref{thm:rigidity} holds for any $\rho$.
-    This test is executable on existing O25 data~\cite{Beau2026a29} without additional BFS
-    computation.
+  A different fixed value $r_{\mathrm{eff}} = d_\rho^2 \neq 4$ would identify an alternative
+  irreducible sector without invalidating the rigidity theorem, since
+  Theorem~\ref{thm:rigidity} holds for any $\rho$.
+  This test is executable on existing O25 data~\cite{Beau2026a29} without additional BFS
+  computation.
 
   \section*{Acknowledgements}
-    The author acknowledges the use of large language models as a supportive tool for refining
-    language, structure, and internal consistency during the development of this manuscript.
+  The author acknowledges the use of large language models as a supportive tool for refining
+  language, structure, and internal consistency during the development of this manuscript.
 
-    \bibliographystyle{plain}
-    \bibliography{cosmochrony-bibliography}
+  \bibliographystyle{plain}
+  \bibliography{cosmochrony-bibliography}
 
 \end{document}
