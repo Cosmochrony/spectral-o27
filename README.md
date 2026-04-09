@@ -46,10 +46,7 @@ embedding into a **rigidity theorem**. :contentReference[oaicite:1]{index=1}
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
 - the exponent $\delta_{\mathrm{pair}} \approx 7.44$ lies in the admissible window
   $[7.4, 10.6]$
-- the transfer chain
-  \[
-  c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
-  \]
+- the transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
   holds unconditionally (**O24**)
 - $\delta_{\mathrm{pair}}$ is numerically stable and structurally invariant (**O25**)
 - $\sigma_{\mathrm{pair}}$ behaves as a quadratic object, consistent with a
@@ -75,13 +72,9 @@ The paper establishes that:
 Equivalently:
 
 - admissibility forces factorisation through the quotient
-  \[
-  \pi: V_q \twoheadrightarrow H_{\mathrm{eff}}
-  \]
+  $\pi: V_q \twoheadrightarrow H_{\mathrm{eff}}$
 - O23 identifies
-  \[
-  H_{\mathrm{eff}} \simeq \mathfrak{su}(2)
-  \]
+  $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$
 - any admissible target representation must therefore be an $SU(2)$-representation
   space
 
@@ -96,9 +89,7 @@ It is the **unique minimal admissible target**. :contentReference[oaicite:3]{ind
 *Result.* Any morphism natural with respect to admissibility must vanish on
 $\ker \Pi_{\mathrm{adm}}$, hence factors uniquely through the admissible quotient:
 
-\[
-\pi: V_q \twoheadrightarrow H_{\mathrm{eff}} = V_q / \ker \Pi_{\mathrm{adm}}.
-\]
+$\pi: V_q \twoheadrightarrow H_{\mathrm{eff}} = V_q / \ker \Pi_{\mathrm{adm}}$.
 
 Thus:
 
@@ -129,13 +120,8 @@ $\mathbb{H} / \mathfrak{su}(2)$. :contentReference[oaicite:5]{index=5}
 
 *Result.* Any admissible morphism satisfies:
 
-\[
-\Phi_{q,\rho}: V_q \to V_\rho
-\quad \Longrightarrow \quad
-V_q \xrightarrow{\;\pi\;} H_{\mathrm{eff}}
-\xrightarrow{\;\iota\;} \mathfrak{su}(2)
-\xrightarrow{\;\rho\;} V_\rho.
-\]
+$\Phi_{q,\rho}: V_q \to V_\rho \quad \Longrightarrow \quad V_q \xrightarrow{\;\pi\;} H_{\mathrm{eff}} \xrightarrow{\;
+\iota\;} \mathfrak{su}(2) \xrightarrow{\;\rho\;} V_\rho.$
 
 Thus:
 
@@ -181,10 +167,7 @@ Thus:
 - $\delta_{\mathrm{pair}}$ is no longer only a scaling exponent of an observable
 - $\beta^*$ becomes the effective norm-growth exponent in the minimal admissible
   non-abelian sector
-- the chain
-  \[
-  c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
-  \]
+- the chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
   gains a representation-theoretic interpretation
 
 This is the conceptual completion delivered by O27. :contentReference[oaicite:8]{index=8}
