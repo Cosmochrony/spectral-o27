@@ -1,13 +1,13 @@
 This repository contains the source of the **O27 Cosmochrony paper**  
 [*Quaternionic Rigidity of Admissible Morphisms:
-Every Admissible \(\Phi_{q,\rho}\) Necessarily Factors through \(\mathfrak{su}(2)\)*](out/SpectralO27.pdf). :contentReference[oaicite:0]{index=0}
+Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$*](out/SpectralO27.pdf). :contentReference[oaicite:0]{index=0}
 
 This work extends the **spectral admissibility sub-programme** by resolving the
 main structural hypothesis left open in **O26**.
 
 It addresses the next question after the quadratic completion of the pair observable:
 
-> Given the pair observable \(\sigma_{\mathrm{pair}}\) and its quadratic interpretation,
+> Given the pair observable $\sigma_{\mathrm{pair}}$ and its quadratic interpretation,
 > does there exist a canonical admissible morphism
 > \[
 > \Phi_{q,\rho}: V_q \to V_\rho
@@ -24,9 +24,9 @@ It is **rigid**.
 
 More precisely:
 
-- every admissible \(\Phi_{q,\rho}\) factors through the admissible quotient
+- every admissible $\Phi_{q,\rho}$ factors through the admissible quotient
 - the intermediate target is forced to be the three-dimensional real Lie algebra
-  \(\mathfrak{su}(2)\)
+  $\mathfrak{su}(2)$
 - the quaternionic structure is not optional, but uniquely imposed by the three
   defining constraints
 - the canonical factorisation
@@ -43,23 +43,23 @@ embedding into a **rigidity theorem**. :contentReference[oaicite:1]{index=1}
 **O16–O26** established that:
 
 - the correct observable is the canonical pair quantity
-  \(\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)\)
-- the exponent \(\delta_{\mathrm{pair}} \approx 7.44\) lies in the admissible window
-  \([7.4, 10.6]\)
+  $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
+- the exponent $\delta_{\mathrm{pair}} \approx 7.44$ lies in the admissible window
+  $[7.4, 10.6]$
 - the transfer chain
   \[
   c_\chi \to \delta_{\mathrm{pair}} \to \beta^*
   \]
   holds unconditionally (**O24**)
-- \(\delta_{\mathrm{pair}}\) is numerically stable and structurally invariant (**O25**)
-- \(\sigma_{\mathrm{pair}}\) behaves as a quadratic object, consistent with a
+- $\delta_{\mathrm{pair}}$ is numerically stable and structurally invariant (**O25**)
+- $\sigma_{\mathrm{pair}}$ behaves as a quadratic object, consistent with a
   Hilbert–Schmidt norm (**O26**)
 
 However:
 
-- the admissible morphism \(\Phi_{q,\rho}\) was still only a hypothesis in **O26**
+- the admissible morphism $\Phi_{q,\rho}$ was still only a hypothesis in **O26**
 - the target structure of that morphism was not yet derived
-- the role of the quaternionic / \(SU(2)\) sector was still interpretative rather than
+- the role of the quaternionic / $SU(2)$ sector was still interpretative rather than
   rigidly forced
 
 This defines the scope of **O27**. :contentReference[oaicite:2]{index=2}
@@ -68,9 +68,9 @@ This defines the scope of **O27**. :contentReference[oaicite:2]{index=2}
 
 The paper establishes that:
 
-> Any morphism \(\Phi_{q,\rho}\) satisfying involution equivariance, quadratic
-> compatibility with \(\sigma_{\mathrm{pair}}\), and naturality with respect to
-> admissibility necessarily factors through \(\mathfrak{su}(2)\).
+> Any morphism $\Phi_{q,\rho}$ satisfying involution equivariance, quadratic
+> compatibility with $\sigma_{\mathrm{pair}}$, and naturality with respect to
+> admissibility necessarily factors through $\mathfrak{su}(2)$.
 
 Equivalently:
 
@@ -82,7 +82,7 @@ Equivalently:
   \[
   H_{\mathrm{eff}} \simeq \mathfrak{su}(2)
   \]
-- any admissible target representation must therefore be an \(SU(2)\)-representation
+- any admissible target representation must therefore be an $SU(2)$-representation
   space
 
 Thus the quaternionic sector is not one admissible realisation among others.
@@ -94,7 +94,7 @@ It is the **unique minimal admissible target**. :contentReference[oaicite:3]{ind
 ### 1. Universality of the admissible quotient
 
 *Result.* Any morphism natural with respect to admissibility must vanish on
-\(\ker \Pi_{\mathrm{adm}}\), hence factors uniquely through the admissible quotient:
+$\ker \Pi_{\mathrm{adm}}$, hence factors uniquely through the admissible quotient:
 
 \[
 \pi: V_q \twoheadrightarrow H_{\mathrm{eff}} = V_q / \ker \Pi_{\mathrm{adm}}.
@@ -118,12 +118,12 @@ Thus:
 - abelian targets are excluded by the non-commutativity of the admissible neutral
   traceless sector
 - arbitrary complex Hilbert spaces may realise norm and conjugation, but fail
-  naturality unless they contain the correct \(SU(2)\) structure
+  naturality unless they contain the correct $SU(2)$ structure
 - the only surviving candidate is the quaternionic one
 
 The comparison is explicit in the paper through the compatibility table for
-\(\mathbb{R}^n\), \(\mathbb{C}^n\), arbitrary Hilbert spaces, and
-\(\mathbb{H} / \mathfrak{su}(2)\). :contentReference[oaicite:5]{index=5}
+$\mathbb{R}^n$, $\mathbb{C}^n$, arbitrary Hilbert spaces, and
+$\mathbb{H} / \mathfrak{su}(2)$. :contentReference[oaicite:5]{index=5}
 
 ### 3. Quaternionic rigidity theorem
 
@@ -140,11 +140,11 @@ V_q \xrightarrow{\;\pi\;} H_{\mathrm{eff}}
 Thus:
 
 - the morphism necessarily factors through the admissible quotient
-- the intermediate real structure is necessarily \(\mathfrak{su}(2)\)
-- the target \(V_\rho\) must be an \(SU(2)\)-representation space
+- the intermediate real structure is necessarily $\mathfrak{su}(2)$
+- the target $V_\rho$ must be an $SU(2)$-representation space
 
 This upgrades O23 from a dimension statement to a universality statement:
-the integer \(3\) is not merely observed, but structurally forced. :contentReference[oaicite:6]{index=6}
+the integer $3$ is not merely observed, but structurally forced. :contentReference[oaicite:6]{index=6}
 
 ### 4. Canonical construction and uniqueness
 
@@ -170,16 +170,16 @@ Thus:
 
 This closes the main open hypothesis of O26. :contentReference[oaicite:7]{index=7}
 
-### 5. Representation-theoretic meaning of \(\beta^*\)
+### 5. Representation-theoretic meaning of $\beta^*$
 
-*Result.* Once \(\Phi_{q,\rho}\) is rigidly fixed, the pair observable is interpreted as a
-Hilbert–Schmidt norm along a trajectory in \(\mathrm{End}(V_\rho)\), and
-\(\beta^*\) acquires a representation-theoretic meaning.
+*Result.* Once $\Phi_{q,\rho}$ is rigidly fixed, the pair observable is interpreted as a
+Hilbert–Schmidt norm along a trajectory in $\mathrm{End}(V_\rho)$, and
+$\beta^*$ acquires a representation-theoretic meaning.
 
 Thus:
 
-- \(\delta_{\mathrm{pair}}\) is no longer only a scaling exponent of an observable
-- \(\beta^*\) becomes the effective norm-growth exponent in the minimal admissible
+- $\delta_{\mathrm{pair}}$ is no longer only a scaling exponent of an observable
+- $\beta^*$ becomes the effective norm-growth exponent in the minimal admissible
   non-abelian sector
 - the chain
   \[
@@ -194,17 +194,17 @@ This is the conceptual completion delivered by O27. :contentReference[oaicite:8]
 The derivation is fully internal:
 
 Born–Infeld admissibility  
-\(\to\) pair observable (**O16–O21**)  
-\(\to\) projection locking (**O22**)  
-\(\to\) quaternionic structure (**O23**)  
-\(\to\) rank stability (**O24**)  
-\(\to\) numerical validation (**O25**)  
-\(\to\) quadratic completion (**O26**)  
-\(\to\) quaternionic rigidity of admissible morphisms (**O27**)
+$\to$ pair observable (**O16–O21**)  
+$\to$ projection locking (**O22**)  
+$\to$ quaternionic structure (**O23**)  
+$\to$ rank stability (**O24**)  
+$\to$ numerical validation (**O25**)  
+$\to$ quadratic completion (**O26**)  
+$\to$ quaternionic rigidity of admissible morphisms (**O27**)
 
 No external symmetry principle is imposed by hand.
 
-The \( \mathfrak{su}(2) \) structure appears as the unique fixed point of the admissibility
+The $\mathfrak{su}(2)$ structure appears as the unique fixed point of the admissibility
 constraints. :contentReference[oaicite:9]{index=9}
 
 ## Mathematical Role of O27
@@ -214,18 +214,18 @@ constraints. :contentReference[oaicite:9]{index=9}
 - defines naturality in admissibility-theoretic terms
 - proves universality of the admissible quotient
 - excludes non-quaternionic target structures
-- proves that every admissible morphism factors through \(\mathfrak{su}(2)\)
+- proves that every admissible morphism factors through $\mathfrak{su}(2)$
 - constructs the canonical morphism explicitly
 - proves uniqueness up to unitary equivalence
-- gives \(\beta^*\) a representation-theoretic interpretation
+- gives $\beta^*$ a representation-theoretic interpretation
 
 More precisely, the paper:
 
-- turns the O26 hypothesis on \(\Phi_{q,\rho}\) into a theorem
+- turns the O26 hypothesis on $\Phi_{q,\rho}$ into a theorem
 - upgrades O23 from dimension to universality
 - closes the structural gap between quadratic observables and admissible
   representation theory
-- makes the \(SU(2)\) thread mathematically necessary rather than suggestive
+- makes the $SU(2)$ thread mathematically necessary rather than suggestive
 
 ## Epistemic Structure of the Paper
 
@@ -247,12 +247,12 @@ More precisely, the paper:
 - quaternionic rigidity theorem
 - canonical factorisation
 - uniqueness up to unitary equivalence
-- representation-theoretic interpretation of \(\beta^*\)
+- representation-theoretic interpretation of $\beta^*$
 
 ### Remaining open problems
 
-- identification of the correct irreducible sector \( \rho \) from O25 data
-- verification of the effective dimension \( r_{\mathrm{eff}} = d_\rho^2 \)
+- identification of the correct irreducible sector $\rho$ from O25 data
+- verification of the effective dimension $r_{\mathrm{eff}} = d_\rho^2$
 - explicit numerical selection between admissible irreducible sectors
 - analytical derivation of the realised sector from admissibility alone
 
@@ -260,15 +260,15 @@ More precisely, the paper:
 
 The conceptual shift is:
 
-- previous view: the \(SU(2)\) thread was the best admissible candidate
-- O27: the quaternionic / \(\mathfrak{su}(2)\) structure is **forced**
+- previous view: the $SU(2)$ thread was the best admissible candidate
+- O27: the quaternionic / $\mathfrak{su}(2)$ structure is **forced**
 
 Thus:
 
 - the representation-theoretic layer is no longer conjectural at the structural level
 - the admissible morphism is not chosen, but derived
 - the non-abelian sector is not optional, but necessary
-- \( \mathfrak{su}(2) \) becomes the unique minimal target compatible with emergence,
+- $\mathfrak{su}(2)$ becomes the unique minimal target compatible with emergence,
   non-injectivity, pair structure, and quadratic admissibility
 
 ## Structural Role of O27
@@ -297,10 +297,10 @@ Thus:
 - formal admissibility-based naturality
 - universal quotient formulation
 - rigidity of admissible morphisms
-- derivation of the \(\mathfrak{su}(2)\) target
+- derivation of the $\mathfrak{su}(2)$ target
 - canonical factorisation
 - uniqueness up to unitary equivalence
-- representation-theoretic interpretation of \(\beta^*\)
+- representation-theoretic interpretation of $\beta^*$
 
 ## Outcome
 
@@ -323,7 +323,7 @@ The admissible morphism is:
 
 ### Irreducible sector selection
 
-Identify which irreducible sector \( \rho \) of \(2I\) is realised by the O25 covariance data.
+Identify which irreducible sector $\rho$ of $2I$ is realised by the O25 covariance data.
 
 ### Effective dimension test
 
@@ -331,14 +331,14 @@ Determine whether:
 \[
 r_{\mathrm{eff}} = d_\rho^2
 \]
-and identify the realised value of \(d_\rho\).
+and identify the realised value of $d_\rho$.
 
 ### Sector derivation
 
 Derive the realised representation sector directly from admissibility, rather than from
 post hoc covariance testing.
 
-### Large-\(q\) regime
+### Large-$q$ regime
 
 Verify stability of the effective dimension and sector selection at larger primes.
 
@@ -349,7 +349,7 @@ The programme is now:
 - structurally closed at the observable-rank level (**O24**)
 - numerically consolidated at the pair level (**O25**)
 - quadratically interpreted (**O26**)
-- rigidly lifted to \(\mathfrak{su}(2)\) (**O27**)
+- rigidly lifted to $\mathfrak{su}(2)$ (**O27**)
 
 The remaining problem is no longer structural existence.
 
