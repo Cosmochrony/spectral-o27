@@ -1,6 +1,6 @@
 This repository contains the source of the **O27 Cosmochrony paper**  
 [*Quaternionic Rigidity of Admissible Morphisms:
-Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$*](out/SpectralO27.pdf). :contentReference[oaicite:0]{index=0}
+Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$*](out/SpectralO27.pdf).
 
 This work extends the **spectral admissibility sub-programme** by resolving the
 main structural hypothesis left open in **O26**.
@@ -36,7 +36,7 @@ More precisely:
   is proved unique up to unitary equivalence
 
 This turns the representation-theoretic layer of the programme from a conjectural
-embedding into a **rigidity theorem**. :contentReference[oaicite:1]{index=1}
+embedding into a **rigidity theorem**.
 
 ## Context
 
@@ -59,7 +59,7 @@ However:
 - the role of the quaternionic / $SU(2)$ sector was still interpretative rather than
   rigidly forced
 
-This defines the scope of **O27**. :contentReference[oaicite:2]{index=2}
+This defines the scope of **O27**.
 
 ## Core Result
 
@@ -80,7 +80,7 @@ Equivalently:
 
 Thus the quaternionic sector is not one admissible realisation among others.
 
-It is the **unique minimal admissible target**. :contentReference[oaicite:3]{index=3}
+It is the **unique minimal admissible target**.
 
 ## Main Structural Results
 
@@ -97,7 +97,7 @@ Thus:
 - naturality becomes an exact factorisation principle
 - the quotient is universal for the problem
 
-This is the key categorical step of the paper. :contentReference[oaicite:4]{index=4}
+This is the key categorical step of the paper.
 
 ### 2. Elimination of non-quaternionic candidates
 
@@ -114,7 +114,7 @@ Thus:
 
 The comparison is explicit in the paper through the compatibility table for
 $\mathbb{R}^n$, $\mathbb{C}^n$, arbitrary Hilbert spaces, and
-$\mathbb{H} / \mathfrak{su}(2)$. :contentReference[oaicite:5]{index=5}
+$\mathbb{H} / \mathfrak{su}(2)$.
 
 ### 3. Quaternionic rigidity theorem
 
@@ -130,7 +130,7 @@ Thus:
 - the target $V_\rho$ must be an $SU(2)$-representation space
 
 This upgrades O23 from a dimension statement to a universality statement:
-the integer $3$ is not merely observed, but structurally forced. :contentReference[oaicite:6]{index=6}
+the integer $3$ is not merely observed, but structurally forced.
 
 ### 4. Canonical construction and uniqueness
 
@@ -154,7 +154,7 @@ Thus:
 - the remaining ambiguity is only representation-theoretic conjugacy
 - no pipeline-dependent freedom remains at the structural level
 
-This closes the main open hypothesis of O26. :contentReference[oaicite:7]{index=7}
+This closes the main open hypothesis of O26.
 
 ### 5. Representation-theoretic meaning of $\beta^*$
 
@@ -170,7 +170,7 @@ Thus:
 - the chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
   gains a representation-theoretic interpretation
 
-This is the conceptual completion delivered by O27. :contentReference[oaicite:8]{index=8}
+This is the conceptual completion delivered by O27.
 
 ## Foundational Chain from the Substrate
 
@@ -188,7 +188,7 @@ $\to$ quaternionic rigidity of admissible morphisms (**O27**)
 No external symmetry principle is imposed by hand.
 
 The $\mathfrak{su}(2)$ structure appears as the unique fixed point of the admissibility
-constraints. :contentReference[oaicite:9]{index=9}
+constraints.
 
 ## Mathematical Role of O27
 
