@@ -46,7 +46,7 @@ embedding into a **rigidity theorem**.
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
 - the exponent $\delta_{\mathrm{pair}} \approx 7.44$ lies in the admissible window
   $[7.4, 10.6]$
-- the transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
+- the transfer chain $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$
   holds unconditionally (**O24**)
 - $\delta_{\mathrm{pair}}$ is numerically stable and structurally invariant (**O25**)
 - $\sigma_{\mathrm{pair}}$ behaves as a quadratic object, consistent with a
@@ -167,7 +167,7 @@ Thus:
 - $\delta_{\mathrm{pair}}$ is no longer only a scaling exponent of an observable
 - $\beta^*$ becomes the effective norm-growth exponent in the minimal admissible
   non-abelian sector
-- the chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
+- the chain $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$
   gains a representation-theoretic interpretation
 
 This is the conceptual completion delivered by O27.
