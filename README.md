@@ -1,6 +1,6 @@
 This repository contains the source of the **O27 Cosmochrony paper**  
-[*Quaternionic Rigidity of Admissible Morphisms:
-Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$*](out/SpectralO27.pdf).
+*Quaternionic Rigidity of Admissible Morphisms:
+Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$*.
 
 This work extends the **spectral admissibility sub-programme** by resolving the
 main structural hypothesis left open in **O26**.
