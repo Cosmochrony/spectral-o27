@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{textcomp}
+\usepackage{doi}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -16,7 +17,7 @@
 Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
 
 \author{J\'er\^ome Beau}
-\date{2026}
+\date{2026\\[2pt]\small Version 1.15.3}
 
 \begin{document}
   \maketitle
@@ -36,9 +37,10 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     (\mathrm{Im}\,\mathbb{H}) = 3$---from a dimension count to a categorical universality statement:
     $\mathfrak{su}(2)$ is the unique minimal admissible target through which every $\Phi_{q,\rho}$
     must factor.
-    Combined with the chain $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$ of
-    O24~\cite{Beau2026a28}, this gives $\beta^*$ a representation-theoretic meaning as the
-    effective scaling exponent of norm growth in the minimal admissible non-abelian sector.
+    This gives the pair-capacity exponent a representation-theoretic carrier in the minimal
+    admissible non-abelian sector.  It does not derive the separate capacity-to-rate map:
+    that prescription combines a changing-degree LPS equation with a fixed-degree Heisenberg
+    observable and has no native carrier on the latter substrate~\cite{Beau2026sgn}.
     The canonical construction $\Phi_{q,\rho} = \rho \circ \iota \circ \pi$ is exhibited explicitly and
     proved unique up to unitary equivalence.
   \end{abstract}
@@ -103,29 +105,27 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
       \label{tab:candidates}
     \end{table}
 
-  \subsection{Relation to the O-series chain}
+  \subsection{Relation to the representation-side O-series chain}
 
-    The transfer $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$ was proved in
-    O24~\cite{Beau2026a28}, unconditionally with respect to the fibre structure of $\Pi$
-    (its standing conditions being the O4--O6 growth-equation closure and coupling
-    hypotheses, the Weil realisation, and the power-law regime).
-    The present result adds a representation-theoretic layer to that chain:
-    \[
-      \text{emergence} \;\Rightarrow\; \text{non-injectivity} \;\Rightarrow\; \text{pair structure}
-      \;\Rightarrow\; \text{quadratic form} \;\Rightarrow\; \mathfrak{su}(2),
-    \]
+    O24~\cite{Beau2026a28} proves that vertical fibre structure does not perturb the
+    observable rank.  The present result adds a representation-theoretic layer to the
+    transfer-free implication chain
+    \begin{align*}
+      \text{emergence} &\Rightarrow \text{non-injectivity} \Rightarrow \text{pair structure}\\
+      &\Rightarrow \text{quadratic form} \Rightarrow \mathfrak{su}(2),
+    \end{align*}
     where each implication is a theorem of the O-series (the first being the no-go theorem of
     paper~L~\cite{Beau2026l}).
-    The exponent $\beta^*$ thereby acquires a direct representation-theoretic meaning:
-    it is the effective scaling exponent of norm growth along a trajectory in the minimal admissible
-    non-abelian sector $\mathfrak{su}(2)$.
+    The exponent $\delta_{\mathrm{pair}}$ thereby acquires a representation-theoretic carrier:
+    it describes a Hilbert--Schmidt trajectory in the minimal admissible non-abelian sector
+    $\mathfrak{su}(2)$.  No capacity-to-rate conclusion follows from this chain.
 
   \subsection{Scope}
 
     This paper proves the rigidity theorem (Section~\ref{sec:rigidity}) and the canonical
     construction (Section~\ref{sec:construction}).
     It does not execute the numerical tests of O26 (those require O25 data~\cite{Beau2026a29}).
-    It does not revisit the transfer chain, proved in O24~\cite{Beau2026a28}.
+    It does not posit or repair the LPS-to-Heisenberg capacity-to-rate transfer.
 
   \subsection{Organisation}
 
@@ -133,7 +133,7 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     Section~\ref{sec:exclusion} eliminates the abelian and generic Hilbert-space candidates.
     Section~\ref{sec:rigidity} states and proves the rigidity theorem.
     Section~\ref{sec:construction} exhibits the canonical factorisation and proves uniqueness.
-    Section~\ref{sec:chain} derives the representation-theoretic interpretation of $\beta^*$.
+    Section~\ref{sec:chain} states the representation-side result and the transfer boundary.
     Section~\ref{sec:open} states the remaining open problem.
 
   \section{Setup and Notation}
@@ -379,7 +379,7 @@ properties specific to any prime $q$.
     the $Q_8$-action.
   \end{proof}
 
-  \section{Representation-Theoretic Interpretation of $\beta^*$}
+  \section{Representation Result and Transfer Boundary}
   \label{sec:chain}
 
   Under Theorem~\ref{thm:main}, the pair observable satisfies
@@ -387,27 +387,28 @@ properties specific to any prime $q$.
     \sigma_{\mathrm{pair}}(n) \;\sim\; \bigl\|\Phi_{q,\rho}(v^{(n)}_c) \otimes
     \Phi_{q,\rho}(v^{(n)}_{q-c})\bigr\|^2_{\mathrm{HS}},
   \]
-  realising $\delta_{\mathrm{pair}}$ as the growth exponent of a Hilbert--Schmidt norm along a
+  realising $\delta_{\mathrm{pair}}$ as the decay exponent of a Hilbert--Schmidt norm along a
   trajectory $(\widetilde{M}^{(n)})_{n \geq 0}$ in $\mathrm{End}(V_\rho)$.
 
-  \begin{corollary}[Representation-theoretic meaning of $\beta^*$]
+  \begin{corollary}[Representation carrier of $\delta_{\mathrm{pair}}$]
     \label{cor:beta}
-    Under the transfer $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$ of
-    O24~\cite{Beau2026a28} (unconditional with respect to the fibre structure of $\Pi$),
-    the exponent $\beta^*$ is the effective scaling exponent of norm growth
-    in the minimal admissible non-abelian sector $\mathfrak{su}(2)$.
-    The phenomenological window $\beta^* \in (0.09, 0.13)$ is a constraint on admissible
-    trajectories in the representation space $\mathrm{End}(V_\rho)$, not a purely numerical fit.
+    The exponent $\delta_{\mathrm{pair}}$ is the decay exponent of a Hilbert--Schmidt
+    trajectory in a representation space factoring through the minimal admissible
+    non-abelian sector $\mathfrak{su}(2)$.
+    This statement does not imply $\beta^*=1/(\delta_{\mathrm{pair}}+\tfrac12)$.
+    That reciprocal requires a distinct cross-substrate growth hypothesis, refuted for the
+    two native realisations in the frozen corpus~\cite{Beau2026sgn}.
   \end{corollary}
 
   \begin{remark}[Completeness of the chain]
 The full implication chain is now:
 \[
-  \text{emergence} \;\Rightarrow\; \text{non-injectivity}~\text{\cite{Beau2026l}}
-  \;\Rightarrow\; \text{pair structure}~\text{\cite{Beau2026a22}}
-  \;\Rightarrow\; \text{quadratic form}~\text{\cite{Beau2026a30}}
-  \;\Rightarrow\; \mathfrak{su}(2)~\text{(Theorem~\ref{thm:rigidity})}.
+  \text{emergence} \Rightarrow \text{non-injectivity} \Rightarrow \text{pair structure}
+  \Rightarrow \text{quadratic form} \Rightarrow \mathfrak{su}(2).
 \]
+The first three inputs are established respectively in paper~L, O18, and O26
+\cite{Beau2026l,Beau2026a22,Beau2026a30}; the last arrow is
+Theorem~\ref{thm:rigidity}.
 Each arrow is a proved result of the O-series or companion paper programme.
 No arrow is an assumption.
   \end{remark}

@@ -44,11 +44,10 @@ embedding into a **rigidity theorem**.
 
 - the correct observable is the canonical pair quantity
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
-- the exponent $\delta_{\mathrm{pair}} \approx 7.44$ lies in the admissible window
-  $[7.4, 10.6]$
-- the transfer chain $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$
-  holds unconditionally (**O24**)
-- $\delta_{\mathrm{pair}}$ is numerically stable and structurally invariant (**O25**)
+- the reference value $\delta_{\mathrm{pair}} \approx 7.44$ lies in the historical
+  phenomenological window $[7.4, 10.6]$
+- vertical fibre structure does not change the observable rank (**O24**)
+- the pair statistic concentrates across conjugate pairs at fixed $q$ (**O25**)
 - $\sigma_{\mathrm{pair}}$ behaves as a quadratic object, consistent with a
   Hilbert–Schmidt norm (**O26**)
 
@@ -156,25 +155,22 @@ Thus:
 
 This closes the main open hypothesis of O26.
 
-### 5. Representation-theoretic meaning of $\beta^*$
+### 5. Representation carrier and transfer boundary
 
 *Result.* Once $\Phi_{q,\rho}$ is rigidly fixed, the pair observable is interpreted as a
-Hilbert–Schmidt norm along a trajectory in $\mathrm{End}(V_\rho)$, and
-$\beta^*$ acquires a representation-theoretic meaning.
+Hilbert–Schmidt norm along a trajectory in $\mathrm{End}(V_\rho)$.
 
 Thus:
 
-- $\delta_{\mathrm{pair}}$ is no longer only a scaling exponent of an observable
-- $\beta^*$ becomes the effective norm-growth exponent in the minimal admissible
-  non-abelian sector
-- the chain $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^*$
-  gains a representation-theoretic interpretation
+- $\delta_{\mathrm{pair}}$ has a representation-theoretic carrier
+- the rigidity theorem does not supply a native Heisenberg growth equation
+- the legacy reciprocal image cannot be interpreted as a derived $\beta^*$
 
 This is the conceptual completion delivered by O27.
 
 ## Foundational Chain from the Substrate
 
-The derivation is fully internal:
+The representation-side implication chain is internal:
 
 Born–Infeld admissibility  
 $\to$ pair observable (**O16–O21**)  
@@ -189,6 +185,8 @@ No external symmetry principle is imposed by hand.
 
 The $\mathfrak{su}(2)$ structure appears as the unique fixed point of the admissibility
 constraints.
+This transfer-free chain does not derive the separate LPS-to-Heisenberg
+capacity-to-rate prescription.
 
 ## Mathematical Role of O27
 
@@ -200,7 +198,7 @@ constraints.
 - proves that every admissible morphism factors through $\mathfrak{su}(2)$
 - constructs the canonical morphism explicitly
 - proves uniqueness up to unitary equivalence
-- gives $\beta^*$ a representation-theoretic interpretation
+- identifies the representation carrier of $\delta_{\mathrm{pair}}$
 
 More precisely, the paper:
 
@@ -230,7 +228,7 @@ More precisely, the paper:
 - quaternionic rigidity theorem
 - canonical factorisation
 - uniqueness up to unitary equivalence
-- representation-theoretic interpretation of $\beta^*$
+- representation carrier of $\delta_{\mathrm{pair}}$
 
 ### Remaining open problems
 
@@ -283,7 +281,7 @@ Thus:
 - derivation of the $\mathfrak{su}(2)$ target
 - canonical factorisation
 - uniqueness up to unitary equivalence
-- representation-theoretic interpretation of $\beta^*$
+- representation carrier of $\delta_{\mathrm{pair}}$
 
 ## Outcome
 
