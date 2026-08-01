@@ -17,7 +17,7 @@
 Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
 
 \author{J\'er\^ome Beau}
-\date{2026\\[2pt]\small Version 1.15.3}
+\date{2026\\[2pt]\small Version 1.15.4}
 
 \begin{document}
   \maketitle
@@ -101,7 +101,9 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
         $\mathbb{H} \,/\, \mathfrak{su}(2)$ & \checkmark & \checkmark & \checkmark & unique candidate   \\
         \hline
       \end{tabular}
-      \caption{Compatibility of candidate target structures with constraints~(a)--(c).}
+      \caption{Compatibility of candidate target structures with constraints~(a)--(c). The
+      ``Arbitrary Hilbert space'' row is established for $V_\rho$ of quaternionic representation
+      type; see Remark~\ref{rem:hilbert-scope}.}
       \label{tab:candidates}
     \end{table}
 
@@ -222,8 +224,9 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     one-dimensional real factors, contradicting the non-commutativity of the quaternionic structure.
   \end{proof}
 
-  \begin{proposition}[Generic complex Hilbert spaces are not canonical]
+  \begin{proposition}[Generic complex Hilbert spaces are not canonical, for quaternionic-type targets]
     \label{prop:hilbert}
+    Let $V_\rho$ be of quaternionic representation type (half-integer spin under $\mathrm{SU}(2)$).
     A morphism $\Phi_{q,\rho}$ targeting an arbitrary complex Hilbert space $\mathcal{H}$ can satisfy
     conditions~(a) and~(b) but cannot satisfy condition~(c) unless $\mathcal{H}$ admits a quaternionic
     structure compatible with admissibility.
@@ -239,8 +242,13 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     A morphism $H_{\mathrm{eff}} \to \mathcal{H}$ that is natural with respect to admissibility must
     intertwine the $\mathrm{SU}(2)$-action, hence it is a morphism of representations.
     By Schur's lemma, such a morphism exists and is canonical only when $\mathcal{H}$ contains
-    $V_\rho$ as an $\mathrm{SU}(2)$-subrepresentation, i.e.\ when $\mathcal{H}$ carries a
-    compatible quaternionic structure.
+    $V_\rho$ as an $\mathrm{SU}(2)$-subrepresentation.
+    For $V_\rho$ of quaternionic type, as assumed here, this containment is equivalent to
+    $\mathcal{H}$ carrying a compatible quaternionic structure, since the commutant of a
+    quaternionic-type representation is itself quaternionic.
+    This equivalence is specific to the quaternionic case (see Remark~\ref{rem:hilbert-scope} below):
+    for $V_\rho$ of real type (integer spin), whose commutant is $\mathbb{R}$, the same containment
+    condition would constrain only a real structure on $\mathcal{H}$, not a quaternionic one.
   \end{proof}
 
   \begin{lemma}[Universality of the admissible quotient]
@@ -260,6 +268,26 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     admissibility-equivalent.
     Vanishing on $\ker \Pi_{\mathrm{adm}}$ is exactly the factorisation condition through $\pi$.
   \end{proof}
+
+  \begin{remark}[Scope of Proposition~\ref{prop:hilbert}]
+    \label{rem:hilbert-scope}
+    Proposition~\ref{prop:hilbert} is stated and proved for $V_\rho$ of quaternionic representation
+    type.
+    The commutant of an irreducible real representation of a compact group is $\mathbb{R}$,
+    $\mathbb{C}$, or $\mathbb{H}$ according to its (real, complex, or quaternionic) representation
+    type; for $\mathrm{SU}(2)$, half-integer-spin representations are of quaternionic type and
+    integer-spin representations are of real type.
+    Only in the quaternionic case does containing $V_\rho$ as an $\mathrm{SU}(2)$-subrepresentation
+    force the ambient space to carry a compatible quaternionic structure.
+    For $V_\rho$ of integer spin, this proposition's argument does not exclude a generic complex
+    Hilbert space as a candidate target, and the exclusion of non-quaternionic candidates for that
+    case is not established here.
+    This does not affect Theorem~\ref{thm:rigidity}: the rigidity of $H_{\mathrm{eff}} \simeq
+    \mathfrak{su}(2)$ itself is established independently, via the admissible-quotient factorisation
+    of Lemma~\ref{lem:quotient}, the dimension count $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ of O23
+    Theorem~3.2~\cite{Beau2026a27}, and the classical uniqueness of $\mathbb{H}$ (Frobenius
+    theorem), and does not rely on Proposition~\ref{prop:hilbert}.
+  \end{remark}
 
   \section{Rigidity Theorem}
   \label{sec:rigidity}
@@ -296,13 +324,13 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     respect to the Born--Infeld admissibility.
     The only admissible automorphisms of $H_{\mathrm{eff}}$ are those compatible with the
     Born--Infeld parity (condition~(a)) and the quadratic norm (condition~(b)).
-    By O23 Theorem~3.2~\cite{Beau2026a27}, the group of such automorphisms is $\mathrm{SU}(2)$,
-    acting on $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ by the adjoint action.
     No other Lie group structure on a three-dimensional real space is compatible with both
     the conjugation involution of~(a) and the positive-definite quadratic form of~(b) simultaneously;
     this is the classical uniqueness of $\mathbb{H}$ as the only normed associative real division
     algebra of dimension greater than~2 (Frobenius theorem).
-    Hence $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ is forced.
+    Hence the group of such automorphisms is $\mathrm{SU}(2)$, acting on
+    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ by the adjoint action, and
+    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ is forced.
 
     \textbf{Part~(iii).}
     A natural morphism $\bar{\Phi} \colon \mathfrak{su}(2) \to V_\rho$ must intertwine the

@@ -100,16 +100,19 @@ This is the key categorical step of the paper.
 
 ### 2. Elimination of non-quaternionic candidates
 
-*Result.* No abelian target and no generic Hilbert target can satisfy the three constraints
-simultaneously unless it carries a compatible quaternionic structure.
+*Result.* No abelian target can satisfy the three constraints. For $V_\rho$ of quaternionic
+representation type (half-integer spin), no generic Hilbert target can satisfy them either unless
+it carries a compatible quaternionic structure; the paper does not establish this second exclusion
+for $V_\rho$ of integer spin, and flags this explicitly (Remark: Scope of the Hilbert-space
+exclusion).
 
 Thus:
 
 - abelian targets are excluded by the non-commutativity of the admissible neutral
   traceless sector
-- arbitrary complex Hilbert spaces may realise norm and conjugation, but fail
-  naturality unless they contain the correct $SU(2)$ structure
-- the only surviving candidate is the quaternionic one
+- for quaternionic-type $V_\rho$, arbitrary complex Hilbert spaces may realise norm and
+  conjugation, but fail naturality unless they contain the correct $SU(2)$ structure
+- the only surviving candidate identified by this argument is the quaternionic one, in that case
 
 The comparison is explicit in the paper through the compatibility table for
 $\mathbb{R}^n$, $\mathbb{C}^n$, arbitrary Hilbert spaces, and
