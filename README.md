@@ -73,7 +73,8 @@ Equivalently:
 - admissibility forces factorisation through the quotient
   $\pi: V_q \twoheadrightarrow H_{\mathrm{eff}}$
 - O23 identifies
-  $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$
+  $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ (Theorem 3.1, conditional on the supplied
+  spinor carrier)
 - any admissible target representation must therefore be an $SU(2)$-representation
   space
 
@@ -131,8 +132,9 @@ Thus:
 - the intermediate real structure is necessarily $\mathfrak{su}(2)$
 - the target $V_\rho$ must be an $SU(2)$-representation space
 
-This upgrades O23 from a dimension statement to a universality statement:
-the integer $3$ is not merely observed, but structurally forced.
+This upgrades O23 from a dimension statement to a universality statement, conditional on
+the supplied spinor carrier of O23: under that carrier, the integer $3$ is structurally
+forced; the carrier selection itself remains an open bridge.
 
 ### 4. Canonical construction and uniqueness
 
@@ -178,13 +180,14 @@ The representation-side implication chain is internal:
 Born–Infeld admissibility  
 $\to$ pair observable (**O16–O21**)  
 $\to$ projection locking (**O22**)  
-$\to$ quaternionic structure (**O23**)  
+$\to$ conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)  
 $\to$ rank stability (**O24**)  
 $\to$ numerical validation (**O25**)  
 $\to$ quadratic completion (**O26**)  
-$\to$ quaternionic rigidity of admissible morphisms (**O27**)
+$\to$ quaternionic rigidity of admissible morphisms (**O27**, conditional on the same carrier)
 
-No external symmetry principle is imposed by hand.
+No external symmetry principle is imposed by hand beyond the supplied carrier and fibre
+hypotheses.
 
 The $\mathfrak{su}(2)$ structure appears as the unique fixed point of the admissibility
 constraints.
@@ -205,8 +208,9 @@ capacity-to-rate prescription.
 
 More precisely, the paper:
 
-- turns the O26 hypothesis on $\Phi_{q,\rho}$ into a theorem
-- upgrades O23 from dimension to universality
+- turns the O26 hypothesis on $\Phi_{q,\rho}$ into a theorem (conditional on the supplied
+  carrier of O23)
+- upgrades O23 from dimension to universality, under the same supplied carrier
 - closes the structural gap between quadratic observables and admissible
   representation theory
 - makes the $SU(2)$ thread mathematically necessary rather than suggestive
@@ -216,9 +220,9 @@ More precisely, the paper:
 ### Established input
 
 - pair observable (**O16–O21**)
-- fibre structure and normalisation (**O17–O19**)
+- conjugation identity and normalisation (**O17–O19**; fibre identification open, O18)
 - projection locking (**O22**)
-- quaternionic admissibility (**O23**)
+- conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)
 - rank stability (**O24**)
 - numerical validation (**O25**)
 - quadratic interpretation (**O26**)
@@ -260,10 +264,10 @@ Thus:
 **O27** completes the representation-theoretic hierarchy:
 
 - **O16**: pair observable
-- **O17–O19**: fibre structure
+- **O17–O19**: conjugation identity and normalisation
 - **O20–O21**: persistence and shell-level saturation
 - **O22**: projection locking
-- **O23**: quaternionic structure
+- **O23**: conditional threshold dimension (supplied carrier)
 - **O24**: rank stability
 - **O25**: numerical validation
 - **O26**: quadratic completion

@@ -33,10 +33,13 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     identified with the admissible neutral traceless sector $\mathrm{Im}\,\mathbb{H} = \mathrm{Im}\,\Pi
     \cap \mathrm{Ntrl}$.
     The quaternionic structure is not a choice but the unique fixed point of the three constraints.
-    This upgrades the result of O23~\cite{Beau2026a27}---which established $\dim_{\mathbb{R}}
-    (\mathrm{Im}\,\mathbb{H}) = 3$---from a dimension count to a categorical universality statement:
+    This upgrades the result of O23~\cite{Beau2026a27}---which proves $\dim_{\mathbb{R}}
+    (\mathrm{Im}\,\mathbb{H}) = 3$ for the traceless sector of a supplied spinor carrier
+    (O23 Theorem~3.1)---from a dimension count to a categorical universality statement:
     $\mathfrak{su}(2)$ is the unique minimal admissible target through which every $\Phi_{q,\rho}$
     must factor.
+    The universality statement is conditional on that supplied carrier; the carrier selection
+    and the observable identification remain open bridges of O23.
     This gives the pair-capacity exponent a representation-theoretic carrier in the minimal
     admissible non-abelian sector.  It does not derive the separate capacity-to-rate map:
     that prescription combines a changing-degree LPS equation with a fixed-degree Heisenberg
@@ -83,7 +86,8 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     The central result is the following.
     Any morphism $\Phi_{q,\rho}$ satisfying (a)--(c) must factor through the admissible quotient
     $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi \cap \mathrm{Ntrl}$, and the quaternionic identification
-    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ (O23~\cite{Beau2026a27}) is forced by the interplay of
+    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ (O23~\cite{Beau2026a27}, conditional on the
+    supplied spinor carrier) is forced by the interplay of
     the three constraints.
     No other three-dimensional or higher-dimensional real structure is compatible with all three
     constraints simultaneously.
@@ -147,9 +151,12 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
   yielding blocks $V_c \simeq \mathbb{C}^q$ and $V_{q-c} \simeq \overline{V_c}$.
   The pair space is $V_q := V_c \oplus V_{q-c}$.
 
-  The parity involution $\chi \mapsto -\chi$, derived in O18~\cite{Beau2026a22} from the
-  Born--Infeld evenness of the substrate action, acts on $V_q$ by complex conjugation:
-  $V_{q-c} \simeq \overline{V_c}$.
+  The parity involution $c \leftrightarrow q-c$, the candidate fibre structure of the pair
+  sector (a structurally motivated hypothesis; O18~\cite{Beau2026a22} establishes
+  Born--Infeld parity as an equivariant symmetry and states the fibre identification as an
+  open problem), acts on $V_q$ by complex conjugation:
+  $V_{q-c} \simeq \overline{V_c}$ (the conjugation identity of O17, recalled in O18
+  Theorem~3.1).
   The canonical pair observable (O19~\cite{Beau2026a23}) is
   \[
     \sigma_{\mathrm{pair}}(n) := \sigma_c(n) \cdot \sigma_{q-c}(n),
@@ -160,7 +167,10 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
   \[
     H_{\mathrm{eff}} := \mathrm{Im}\,\Pi \cap \mathrm{Ntrl},
   \]
-  with $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ by O23 Theorem~3.2~\cite{Beau2026a27}, together
+  with $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ by O23 Theorem~3.1~\cite{Beau2026a27},
+  conditionally on the supplied spinor carrier $V_\rho \cong \mathbb{C}^2$ assumed there
+  (the carrier selection and the identification of the observable sector with
+  $\mathfrak{su}(V_\rho)$ are open bridges of O23), together
   with the quaternionic identification
   \[
     \iota \colon H_{\mathrm{eff}} \xrightarrow{\;\simeq\;} \mathfrak{su}(2),
@@ -217,9 +227,9 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
   \begin{proof}
     Condition~(c) forces $\Phi_{q,\rho}$ to factor through $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi \cap
     \mathrm{Ntrl}$.
-    By O23 Theorem~3.2~\cite{Beau2026a27}, $H_{\mathrm{eff}}$ is quaternionic and its real rank is
-    exactly 3, maximal among all admissible associative structures compatible with the Born--Infeld
-    parity.
+    By O23 Theorem~3.1~\cite{Beau2026a27}, under the supplied spinor carrier hypothesis,
+    $H_{\mathrm{eff}} \cong \mathfrak{su}(2) \cong \mathrm{Im}\,\mathbb{H}$ is quaternionic
+    and its real rank is exactly~3.
     An abelian target would require $H_{\mathrm{eff}}$ to split as a direct sum of
     one-dimensional real factors, contradicting the non-commutativity of the quaternionic structure.
   \end{proof}
@@ -284,8 +294,9 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
     case is not established here.
     This does not affect Theorem~\ref{thm:rigidity}: the rigidity of $H_{\mathrm{eff}} \simeq
     \mathfrak{su}(2)$ itself is established independently, via the admissible-quotient factorisation
-    of Lemma~\ref{lem:quotient}, the dimension count $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ of O23
-    Theorem~3.2~\cite{Beau2026a27}, and the classical uniqueness of $\mathbb{H}$ (Frobenius
+    of Lemma~\ref{lem:quotient}, the conditional dimension count $\dim_{\mathbb{R}}
+    H_{\mathrm{eff}} = 3$ of O23
+    Theorem~3.1~\cite{Beau2026a27}, and the classical uniqueness of $\mathbb{H}$ (Frobenius
     theorem), and does not rely on Proposition~\ref{prop:hilbert}.
   \end{remark}
 
@@ -340,9 +351,11 @@ Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$}
   \end{proof}
 
   \begin{remark}[Relation to O23]
-O23~\cite{Beau2026a27} established that $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$.
+O23~\cite{Beau2026a27} proves $\dim_{\mathbb{R}} H_{\mathrm{eff}} = 3$ conditionally on the
+supplied spinor carrier (O23 Theorem~3.1).
 Theorem~\ref{thm:rigidity} upgrades this from a dimension statement to a \emph{categorical
-universality} statement: $\mathfrak{su}(2)$ is the unique minimal admissible target through
+universality} statement, under the same supplied carrier: $\mathfrak{su}(2)$ is the unique
+minimal admissible target through
 which every morphism satisfying~(a)--(c) must factor.
 The integer~3 is not an accident of the Weil representation: it is the unique dimension
 compatible with the simultaneous constraints of involution, quadratic form, and
@@ -353,15 +366,18 @@ associativity required by naturality.
 The appeal to the Frobenius theorem in Part~(ii) is not circular.
 Frobenius establishes that $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ are the only normed real
 associative division algebras.
-Dimension~1 ($\mathbb{R}$) is excluded by the non-commutativity imposed by~(c) and O23.
+Dimension~1 ($\mathbb{R}$) is excluded by the non-commutativity imposed by~(c) and by the
+non-abelian support lemma of O23 (Lemma~2.1 there, carried by irreducibility of the supplied
+carrier, not by neutrality).
 Dimension~2 ($\mathbb{C}$) is excluded because a complex structure on $H_{\mathrm{eff}}$ is
 not preserved by the $\mathbb{Z}_2$-involution of~(a) (complex conjugation is not an inner
 automorphism of $\mathbb{C}$).
 Dimension~4 ($\mathbb{H}$ itself, not $\mathfrak{su}(2) \simeq \mathrm{Im}\,\mathbb{H}$) is
-excluded because $\mathrm{dim}_{\mathbb{R}} H_{\mathrm{eff}} = 3$ (O23).
+excluded because $\mathrm{dim}_{\mathbb{R}} H_{\mathrm{eff}} = 3$ (O23 Theorem~3.1, under
+the supplied carrier).
 The unique compatible structure is therefore $\mathrm{Im}\,\mathbb{H} \simeq \mathfrak{su}(2)$.
 The argument uses only the algebraic consequences of constraints~(a)--(c) and the
-dimension bound of O23; it does not depend on the Heisenberg group structure or on
+conditional dimension bound of O23; it does not depend on the Heisenberg group structure or on
 properties specific to any prime $q$.
   \end{remark}
 
@@ -434,11 +450,13 @@ The full implication chain is now:
   \text{emergence} \Rightarrow \text{non-injectivity} \Rightarrow \text{pair structure}
   \Rightarrow \text{quadratic form} \Rightarrow \mathfrak{su}(2).
 \]
-The first three inputs are established respectively in paper~L, O18, and O26
-\cite{Beau2026l,Beau2026a22,Beau2026a30}; the last arrow is
-Theorem~\ref{thm:rigidity}.
-Each arrow is a proved result of the O-series or companion paper programme.
-No arrow is an assumption.
+The arrows are of unequal type.
+The first is established in paper~L~\cite{Beau2026l}.
+The second is partly open: O18~\cite{Beau2026a22} proves Born--Infeld parity as an
+equivariant symmetry, but the identification of the parity orbit with a fibre of $\Pi$
+--- hence the pair structure --- is a structurally motivated hypothesis (O18 Problem~2.8).
+The third is established in O26~\cite{Beau2026a30}; the last arrow is
+Theorem~\ref{thm:rigidity}, conditional on the supplied carrier of O23.
   \end{remark}
 
   \section{Remaining Open Problem}
