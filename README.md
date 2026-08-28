@@ -1,46 +1,51 @@
 This repository contains the source of the **O27 Cosmochrony paper**  
-*Quaternionic Rigidity of Admissible Morphisms:
-Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$*.
+*Admissible Morphisms on the Weil Pair Sector:
+The $\mathfrak{su}(2)$ Action on $\mathrm{End}(V_\rho)$ and the Open Vector Lift*.
 
-This work extends the **spectral admissibility sub-programme** by resolving the
-main structural hypothesis left open in **O26**.
-
-It addresses the next question after the quadratic completion of the pair observable:
+This work belongs to the **spectral admissibility sub-programme**.
+It addresses the question raised by the quadratic completion of the pair observable in **O26**:
 
 > Given the pair observable $\sigma_{\mathrm{pair}}$ and its quadratic interpretation,
-> does there exist a canonical admissible morphism
-> \[
-> \Phi_{q,\rho}: V_q \to V_\rho
-> \]
-> and, if so, is its target structure uniquely determined?
+> what is forced about a morphism out of the Weil pair space, and what is not?
 
 ## Quick Summary
 
-O27 proves that the answer is yes, and stronger than expected.
+The paper separates what the admissibility constraints prove from what they leave open.
 
-The admissible morphism is not merely existent or convenient.
+What is proved:
 
-It is **rigid**.
+- a morphism whose kernel contains $\ker \Pi_{\mathrm{adm}}$ factors uniquely, **as a real-linear
+  map**, through the admissible quotient
+  $\pi : V_q \twoheadrightarrow \mathcal{Q} = V_q / \ker \Pi_{\mathrm{adm}}$
+- under the spinor carrier supplied by **O23**, the complex intertwiner space
+  $\mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3}_{\mathbb{C}}, \mathrm{End}(V_\rho))$ is
+  one-dimensional. Adding the saturation hypothesis below, an equivariant map is then unique
+  **up to a scalar** that the quadratic condition, being a proportionality, does not fix
+- there is no non-zero $\mathfrak{su}(2)$-equivariant map from the adjoint to the fundamental:
+  $\dim \mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3}_{\mathrm{ad}}, \mathbf{2}_{\mathrm{fund}}) = 0$
 
-More precisely:
+What is not proved, and is stated as such:
 
-- every admissible $\Phi_{q,\rho}$ factors through the admissible quotient
-- the intermediate target is forced to be the three-dimensional real Lie algebra
-  $\mathfrak{su}(2)$
-- the quaternionic structure is not optional, but uniquely imposed by the three
-  defining constraints
-- the canonical factorisation
-  \[
-  \Phi_{q,\rho} = \rho \circ \iota \circ \pi
-  \]
-  is proved unique up to unitary equivalence
-
-This turns the representation-theoretic layer of the programme from a conjectural
-embedding into a **rigidity theorem**.
+- the three constraints do **not** impose $\mathfrak{su}(2)$-equivariance; an explicit countermodel
+  $\Phi_T = \rho \circ T \circ \iota \circ \pi$ satisfies them and is not a scalar multiple of the
+  canonical map
+- reaching $H_{\mathrm{eff}} = \mathrm{Im}\,\Pi_{\mathrm{adm}} \cap \mathrm{Ntrl}$ from the
+  quotient, and carrying O23's dimension count over to it, are together **one hypothesis**,
+  $\mathrm{Im}\,\Pi_{\mathrm{adm}} = \mathrm{Ntrl}$ (*admissible saturation*), assumed and
+  derived nowhere.
+  O23 proves $\dim_{\mathbb{R}} \mathfrak{su}(V_\rho) = 3$ for $\mathrm{Ntrl}$; it never
+  mentions $H_{\mathrm{eff}}$, $\Pi_{\mathrm{adm}}$ or the admissible quotient
+- that the parity involution descends to $H_{\mathrm{eff}}$ and acts there by $\mathrm{Ad}(g_0)$,
+  for a non-central $g_0$, is a **second hypothesis** (*parity transport*). It presupposes
+  saturation in order to be stated at all, but does not follow from it
+- the quadratic condition is **not** established for the canonical map: nothing here makes $\pi$ an
+  isometry
+- **O26** Hypothesis 4.4, which asks for a canonical linear map
+  $\mathcal{V}_q \to V_\rho$ into the spin-$\tfrac{1}{2}$ space, **remains open**
 
 ## Context
 
-**O16–O26** established that:
+**O16--O26** established that:
 
 - the correct observable is the canonical pair quantity
   $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
@@ -49,315 +54,192 @@ embedding into a **rigidity theorem**.
 - vertical fibre structure does not change the observable rank (**O24**)
 - the pair statistic concentrates across conjugate pairs at fixed $q$ (**O25**)
 - $\sigma_{\mathrm{pair}}$ behaves as a quadratic object, consistent with a
-  Hilbert–Schmidt norm (**O26**)
+  Hilbert--Schmidt norm (**O26**)
 
-However:
+**O26** left the existence of a canonical assignment
+$\Phi_{q,\rho} : \mathcal{V}_q \to V_\rho$ as its Hypothesis 4.4.
+That hypothesis is the subject of this paper, and it is not resolved by it.
 
-- the admissible morphism $\Phi_{q,\rho}$ was still only a hypothesis in **O26**
-- the target structure of that morphism was not yet derived
-- the role of the quaternionic / $SU(2)$ sector was still interpretative rather than
-  rigidly forced
+## The Three Conditions
 
-This defines the scope of **O27**.
+The paper works with three conditions on a morphism out of $V_q$.
+They are this paper's reading, and they are not verbatim the clauses of O26 Hypothesis 4.4:
 
-## Core Result
+- **(a) Involution equivariance** under $c \leftrightarrow q-c$, the involution acting on $V_q$ by
+  complex conjugation.
+  That it descends to $H_{\mathrm{eff}}$, and that the descended map is $\mathrm{Ad}(g_0)$ for some
+  $g_0 \in \mathrm{SU}(2)$, are the **parity transport hypothesis**; neither is derived.
+  A general linear involution of a real three-dimensional space is not of that form: a reflection
+  with a one-dimensional $(-1)$-eigenspace has determinant $-1$.
+  What is settled is what the transported involution cannot be. It is not $X \mapsto -X$: on a
+  non-abelian Lie algebra negation is an anti-automorphism, since $[-X,-Y] = [X,Y]$.
+  And the lift has order four, not two: $g_0^2 = -\mathrm{Id}$, for instance $g_0 = i\sigma_2$.
+- **(b) Quadratic compatibility** with $\sigma_{\mathrm{pair}}$, in the Hilbert--Schmidt norm carried
+  by the target $\mathrm{End}(V_\rho)$.
+- **(c) Factorisation through admissibility**: $\ker \Pi_{\mathrm{adm}} \subseteq \ker \Phi_{q,\rho}$.
+  This is a statement about the kernel and nothing more.
+  It does not imply frame independence, and it does not imply equivariance.
 
-The paper establishes that:
+O26's naturality clause asks instead for independence of the pair $\{c, q-c\}$ and of the shell
+index $n$.
+Condition (c) replaces that clause; the two are different requirements, and neither is derived from
+the other here.
 
-> Any morphism $\Phi_{q,\rho}$ satisfying involution equivariance, quadratic
-> compatibility with $\sigma_{\mathrm{pair}}$, and naturality with respect to
-> admissibility necessarily factors through $\mathfrak{su}(2)$.
-
-Equivalently:
-
-- admissibility forces factorisation through the quotient
-  $\pi: V_q \twoheadrightarrow H_{\mathrm{eff}}$
-- O23 identifies
-  $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$ (Theorem 3.1, conditional on the supplied
-  spinor carrier)
-- any admissible target representation must therefore be an $SU(2)$-representation
-  space
-
-Thus the quaternionic sector is not one admissible realisation among others.
-
-It is the **unique minimal admissible target**.
-
-## Main Structural Results
+## Main Results
 
 ### 1. Universality of the admissible quotient
 
-*Result.* Any morphism natural with respect to admissibility must vanish on
-$\ker \Pi_{\mathrm{adm}}$, hence factors uniquely through the admissible quotient:
+Condition (c) is exactly $\ker \Pi_{\mathrm{adm}} \subseteq \ker \Phi$, so $\Phi$ descends uniquely
+to $\mathcal{Q} = V_q / \ker \Pi_{\mathrm{adm}}$.
+The lemma restates condition (c) in usable form and adds nothing to it.
+Its target is $\mathcal{Q}$, not $H_{\mathrm{eff}}$.
 
-$\pi: V_q \twoheadrightarrow H_{\mathrm{eff}} = V_q / \ker \Pi_{\mathrm{adm}}$.
+### 2. Factorisation and the equivariant Schur counts
 
-Thus:
+Under (a)--(c), $\Phi_{q,\rho}$ factors uniquely as a real-linear map through
+$\pi : V_q \to \mathcal{Q}$; this carries no equivariance.
 
-- non-admissible directions are invisible to any admissible morphism
-- naturality becomes an exact factorisation principle
-- the quotient is universal for the problem
+Assuming in addition the O23 carrier, so $V_\rho \cong \mathbb{C}^2$ and
+$\mathrm{Ntrl} = \mathfrak{su}(V_\rho)$:
 
-This is the key categorical step of the paper.
+- $\rho : \mathfrak{su}(2) \to \mathrm{End}(V_\rho)$ is equivariant
+- $\mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3}_{\mathbb{C}}, \mathrm{End}(V_\rho))$ is
+  one-dimensional over $\mathbb{C}$, since
+  $\mathrm{End}(\mathbb{C}^2) \cong \mathbf{3} \oplus \mathbf{1}$; the corresponding space of
+  real-linear intertwiners has real dimension two, by the adjunction
+  $\mathrm{Hom}_{\mathbb{R}}(W,U) \cong \mathrm{Hom}_{\mathbb{C}}(W \otimes_{\mathbb{R}}
+  \mathbb{C}, U)$
+- $\dim \mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3}_{\mathrm{ad}}, \mathbf{2}_{\mathrm{fund}}) = 0$
 
-### 2. Elimination of non-quaternionic candidates
+The last two are statements about **equivariant** maps only.
+They do not classify the maps that merely satisfy (a)--(c).
+The intertwiner counts hold for every non-trivial irreducible $\rho$, that is every
+$d_\rho \geq 2$, by Clebsch--Gordan multiplicity one; they fail for the trivial representation
+$d_\rho = 1$, where $\rho|_{\mathfrak{su}(2)} = 0$.
 
-*Result.* No abelian target can satisfy the three constraints. For $V_\rho$ of quaternionic
-representation type (half-integer spin), no generic Hilbert target can satisfy them either unless
-it carries a compatible quaternionic structure; the paper does not establish this second exclusion
-for $V_\rho$ of integer spin, and flags this explicitly (Remark: Scope of the Hilbert-space
-exclusion).
+### 3. The constraints do not impose equivariance
 
-Thus:
+Assume parity transport, so $P = \mathrm{Ad}(g_0)$. Equip $\mathfrak{su}(2)$ with the form
+$X \mapsto \|\rho(X)\|_{\mathrm{HS}}^2$, positive definite and $\mathrm{Ad}$-invariant for
+$d_\rho \geq 2$, hence proportional to the Euclidean form and invariant under reflections too.
+Being $\mathrm{Ad}$-invariant it makes $P$ orthogonal, so the $(-1)$-eigenspace of a non-trivial
+$\mathrm{Ad}(g_0)$ is a two-dimensional orthogonal summand.
+Let $T$ be a reflection inside it, extended by the identity: orthogonal, non-scalar, commuting with
+$P$.
+Then $\Phi_T = \rho \circ T \circ \iota \circ \pi$ has the same kernel, the same Hilbert--Schmidt
+norm and the same parity equivariance as $\rho \circ \iota \circ \pi$, and is not a scalar multiple
+of it.
 
-- abelian targets are excluded by the non-commutativity of the admissible neutral
-  traceless sector
-- for quaternionic-type $V_\rho$, arbitrary complex Hilbert spaces may realise norm and
-  conjugation, but fail naturality unless they contain the correct $SU(2)$ structure
-- the only surviving candidate identified by this argument is the quaternionic one, in that case
+Consequently the uniqueness statement requires $\mathfrak{su}(2)$-equivariance **of the descended
+map** $\bar\Phi : H_{\mathrm{eff}} \to \mathrm{End}(V_\rho)$ as an explicit hypothesis, stated
+there because no $\mathfrak{su}(2)$-action on $V_q$ is defined anywhere.
+The impossibility count excludes an equivariant adjoint-factorising realisation of O26 Hypothesis
+4.4, not every quotient-factorising linear lift.
 
-The comparison is explicit in the paper through the compatibility table for
-$\mathbb{R}^n$, $\mathbb{C}^n$, arbitrary Hilbert spaces, and
-$\mathbb{H} / \mathfrak{su}(2)$.
+### 4. What the three constraints do not determine
 
-### 3. Quaternionic rigidity theorem
+A three-dimensional real **non-abelian** Lie algebra carrying a positive-definite
+$\mathrm{Ad}$-invariant form is the compact form $\mathfrak{su}(2)$.
+The non-abelian hypothesis is not decorative: $\mathbb{R}^3$ carries such a form as well, its
+adjoint action being trivial.
+Condition (b) supplies a positive-definite quadratic form; whether that form is
+$\mathrm{Ad}$-invariant is not established, and neither is non-abelianness of the carrier.
 
-*Result.* Any admissible morphism satisfies:
+### 5. Canonical construction and its conditional consequence
 
-$\Phi_{q,\rho}: V_q \to V_\rho \quad \Longrightarrow \quad V_q \xrightarrow{\;\pi\;} H_{\mathrm{eff}} \xrightarrow{\;
-\iota\;} \mathfrak{su}(2) \xrightarrow{\;\rho\;} V_\rho.$
+The canonical map is
+$\Phi_{q,\rho} = \rho \circ \iota \circ \pi : V_q \to \mathrm{End}(V_\rho)$.
+It satisfies (c) unconditionally, and (a) under the parity transport hypothesis.
+Whether it satisfies (b) is **not** settled: neither kernel factorisation nor the universal
+property makes $\pi$ an isometry.
 
-Thus:
+Subject to (b), $\delta_{\mathrm{pair}}$ is the decay exponent of a Hilbert--Schmidt trajectory in a
+representation space factoring through $\mathfrak{su}(2)$.
+This does not imply $\beta^* = 1/(\delta_{\mathrm{pair}} + \tfrac{1}{2})$: that reciprocal requires a
+distinct cross-substrate growth hypothesis, refuted for the two native realisations in the frozen
+corpus.
 
-- the morphism necessarily factors through the admissible quotient
-- the intermediate real structure is necessarily $\mathfrak{su}(2)$
-- the target $V_\rho$ must be an $SU(2)$-representation space
+## Type of the Implication Chain
 
-This upgrades O23 from a dimension statement to a universality statement, conditional on
-the supplied spinor carrier of O23: under that carrier, the integer $3$ is structurally
-forced; the carrier selection itself remains an open bridge.
+The representation-side chain
 
-### 4. Canonical construction and uniqueness
+$$\text{emergence} \Rightarrow \text{non-injectivity} \Rightarrow \text{pair structure}
+\Rightarrow \text{quadratic form} \Rightarrow \mathfrak{su}(2)$$
 
-*Result.* The canonical admissible morphism is:
+has arrows of unequal type:
 
-\[
-\Phi_{q,\rho} = \rho \circ \iota \circ \pi.
-\]
+- the first is the no-go theorem of paper L
+- the second is partly open: **O18** proves Born--Infeld parity as a response-family covariance, but
+  the identification of the parity orbit with a fibre of O18's non-injective projection is a
+  structurally motivated hypothesis (O18 Problem 2.8)
+- the third is established in **O26**
+- the last is the carrier supplied conditionally by **O23**, not a derivation from (a)--(c)
 
-It satisfies all three defining constraints:
-
-- involution equivariance
-- quadratic compatibility
-- naturality with respect to admissibility
-
-Moreover, it is unique up to unitary equivalence.
-
-Thus:
-
-- the admissible morphism is canonical
-- the remaining ambiguity is only representation-theoretic conjugacy
-- no pipeline-dependent freedom remains at the structural level
-
-This closes the main open hypothesis of O26.
-
-### 5. Representation carrier and transfer boundary
-
-*Result.* Once $\Phi_{q,\rho}$ is rigidly fixed, the pair observable is interpreted as a
-Hilbert–Schmidt norm along a trajectory in $\mathrm{End}(V_\rho)$.
-
-Thus:
-
-- $\delta_{\mathrm{pair}}$ has a representation-theoretic carrier
-- the rigidity theorem does not supply a native Heisenberg growth equation
-- the legacy reciprocal image cannot be interpreted as a derived $\beta^*$
-
-This is the conceptual completion delivered by O27.
-
-## Foundational Chain from the Substrate
-
-The representation-side implication chain is internal:
-
-Born–Infeld admissibility  
-$\to$ pair observable (**O16–O21**)  
-$\to$ projection locking (**O22**)  
-$\to$ conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)  
-$\to$ rank stability (**O24**)  
-$\to$ numerical validation (**O25**)  
-$\to$ quadratic completion (**O26**)  
-$\to$ quaternionic rigidity of admissible morphisms (**O27**, conditional on the same carrier)
-
-No external symmetry principle is imposed by hand beyond the supplied carrier and fibre
-hypotheses.
-
-The $\mathfrak{su}(2)$ structure appears as the unique fixed point of the admissibility
-constraints.
-This transfer-free chain does not derive the separate LPS-to-Heisenberg
-capacity-to-rate prescription.
-
-## Mathematical Role of O27
-
-**O27** provides the structural completion of the representation-theoretic layer:
-
-- defines naturality in admissibility-theoretic terms
-- proves universality of the admissible quotient
-- excludes non-quaternionic target structures
-- proves that every admissible morphism factors through $\mathfrak{su}(2)$
-- constructs the canonical morphism explicitly
-- proves uniqueness up to unitary equivalence
-- identifies the representation carrier of $\delta_{\mathrm{pair}}$
-
-More precisely, the paper:
-
-- turns the O26 hypothesis on $\Phi_{q,\rho}$ into a theorem (conditional on the supplied
-  carrier of O23)
-- upgrades O23 from dimension to universality, under the same supplied carrier
-- closes the structural gap between quadratic observables and admissible
-  representation theory
-- makes the $SU(2)$ thread mathematically necessary rather than suggestive
-
-## Epistemic Structure of the Paper
+## Epistemic Structure
 
 ### Established input
 
-- pair observable (**O16–O21**)
-- conjugation identity and normalisation (**O17–O19**; fibre identification open, O18)
+- pair observable (**O16--O21**)
+- conjugation identity and normalisation (**O17--O19**; fibre identification open, **O18**)
 - projection locking (**O22**)
 - conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)
 - rank stability (**O24**)
-- numerical validation (**O25**)
+- numerical campaign (**O25**)
 - quadratic interpretation (**O26**)
 
-### New results
+### Proved here
 
-- formal definition of naturality
-- universality of the admissible quotient
-- exclusion of non-quaternionic targets
-- quaternionic rigidity theorem
-- canonical factorisation
-- uniqueness up to unitary equivalence
-- representation carrier of $\delta_{\mathrm{pair}}$
+- unique real-linear factorisation through the admissible quotient $\mathcal{Q}$
+- one-dimensionality of the complex intertwiner space, under the supplied carrier
+- vanishing of $\mathrm{Hom}_{\mathfrak{su}(2)}(\mathbf{3}_{\mathrm{ad}}, \mathbf{2}_{\mathrm{fund}})$
+- a countermodel showing that (a)--(c) do not impose equivariance
 
-### Remaining open problems
+### Open
 
-- identification of the correct irreducible sector $\rho$ from O25 data
-- verification of the effective dimension $r_{\mathrm{eff}} = d_\rho^2$
-- explicit numerical selection between admissible irreducible sectors
-- analytical derivation of the realised sector from admissibility alone
-
-## Interpretation of the Result
-
-The conceptual shift is:
-
-- previous view: the $SU(2)$ thread was the best admissible candidate
-- O27: the quaternionic / $\mathfrak{su}(2)$ structure is **forced**
-
-Thus:
-
-- the representation-theoretic layer is no longer conjectural at the structural level
-- the admissible morphism is not chosen, but derived
-- the non-abelian sector is not optional, but necessary
-- $\mathfrak{su}(2)$ becomes the unique minimal target compatible with emergence,
-  non-injectivity, pair structure, and quadratic admissibility
-
-## Structural Role of O27
-
-**O27** completes the representation-theoretic hierarchy:
-
-- **O16**: pair observable
-- **O17–O19**: conjugation identity and normalisation
-- **O20–O21**: persistence and shell-level saturation
-- **O22**: projection locking
-- **O23**: conditional threshold dimension (supplied carrier)
-- **O24**: rank stability
-- **O25**: numerical validation
-- **O26**: quadratic completion
-- **O27**: rigidity of admissible morphisms
-
-Thus:
-
-- the observable is identified
-- its scaling is validated
-- its quadratic structure is established
-- its admissible target is derived uniquely
-
-## What O27 Adds
-
-- formal admissibility-based naturality
-- universal quotient formulation
-- rigidity of admissible morphisms
-- derivation of the $\mathfrak{su}(2)$ target
-- canonical factorisation
-- uniqueness up to unitary equivalence
-- representation carrier of $\delta_{\mathrm{pair}}$
-
-## Outcome
-
-The spectral admissibility framework is now:
-
-- structurally grounded (**O24**)
-- numerically validated (**O25**)
-- quadratically completed (**O26**)
-- representation-theoretically rigid (**O27**)
-
-The admissible morphism is:
-
-- canonical
-- intrinsic
-- quotient-induced
-- quaternionically forced
-- unique up to unitary equivalence
-
-## Residual Open Problems
-
-### Irreducible sector selection
-
-Identify which irreducible sector $\rho$ of $2I$ is realised by the O25 covariance data.
-
-### Effective dimension test
-
-Determine whether:
-\[
-r_{\mathrm{eff}} = d_\rho^2
-\]
-and identify the realised value of $d_\rho$.
-
-### Sector derivation
-
-Derive the realised representation sector directly from admissibility, rather than from
-post hoc covariance testing.
-
-### Large-$q$ regime
-
-Verify stability of the effective dimension and sector selection at larger primes.
-
-## Status
-
-The programme is now:
-
-- structurally closed at the observable-rank level (**O24**)
-- numerically consolidated at the pair level (**O25**)
-- quadratically interpreted (**O26**)
-- rigidly lifted to $\mathfrak{su}(2)$ (**O27**)
-
-The remaining problem is no longer structural existence.
-
-It is **sector identification inside the now-forced admissible representation class**.
+- **the vector lift.** O26 Hypothesis 4.4 remains open.
+  The Schur count excludes an equivariant adjoint-factorising realisation; it excludes neither a
+  non-equivariant quotient-factorising lift nor a map that does not factor through the quotient at
+  all.
+- **admissible saturation**, $\mathrm{Im}\,\Pi_{\mathrm{adm}} = \mathrm{Ntrl}$.
+  Neither inclusion is established. Without $\subseteq$, the quotient $\mathcal{Q}$ is not the
+  sector $H_{\mathrm{eff}}$; without $\supseteq$, O23's dimension count does not transfer to it.
+  Every statement mentioning $H_{\mathrm{eff}}$ passes through this hypothesis, its own
+  presupposition in the parity-transport hypothesis and in condition (a) included; the factorisation
+  and the two Schur counts do not.
+- **parity transport**, that the involution descends and acts by $\mathrm{Ad}(g_0)$ for a
+  non-central $g_0$.
+  Only the countermodel and condition (a) of the canonical map depend on it.
+- **$\mathrm{Ad}$-invariance of the quadratic form**, together with a non-abelianness input for the
+  carrier.
+  Both would be needed to identify the carrier without the one supplied by O23.
+- **realisation of $\pi$.** Approximating $\pi$ by the leading Gram--Schmidt basis vectors is not a
+  realisation of it: **O25** reports $r_{\mathrm{eff}} = 2$ universally at $q \in \{29, 61\}$, an
+  artefact of the DC mode dominating the projection.
 
 ## Repository Structure
 
 ```text
-paper/
-├── out/      # Compiled O27 PDF
-├── tex/      # LaTeX sources
+o27/
+├── out/      # Compiled PDF, generated by compile.sh, git-ignored
+├── tex/      # LaTeX sources and bibliography
+├── compile.sh
 └── README.md
 ```
+
+Build with:
+
+```bash
+bash compile.sh
+```
+
 # Citation
 
-If you reference this work, please cite:
+If you reference this work, please cite the Zenodo concept DOI, which always resolves to the latest
+version:
 
-J. Beau: Quaternionic Rigidity of Admissible Morphisms:
-Every Admissible $\Phi_{q,\rho}$ Necessarily Factors through $\mathfrak{su}(2)$
-Zenodo, 2026.
+J. Beau: *Admissible Morphisms on the Weil Pair Sector: The $\mathfrak{su}(2)$ Action on
+$\mathrm{End}(V_\rho)$ and the Open Vector Lift*, Zenodo, 2026,
+[10.5281/zenodo.19489296](https://doi.org/10.5281/zenodo.19489296).
 
 # Acknowledgements
 
@@ -373,12 +255,10 @@ This repository is intended as a research reference.
 
 Critical feedback, independent verification, and further analysis of:
 
-- admissible morphisms
-- quaternionic rigidity
-- quotient factorisation
-- irreducible sector selection
-- covariance dimension tests
-- representation-theoretic admissibility
+- admissible morphisms and quotient factorisation
+- the open vector lift of O26 Hypothesis 4.4
+- $\mathrm{Ad}$-invariance of the $\sigma_{\mathrm{pair}}$ form
+- frame-independent realisations of $\pi$
 
 are welcome.
 

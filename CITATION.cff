@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 message: "If you cite this work, please use the metadata from this file."
-title: "Quaternionic Rigidity of Admissible Morphisms: Every Admissible \Phi_q, Necessarily Factors through su (2)"
+title: "Admissible Morphisms on the Weil Pair Sector: The su(2) Action on End(Vρ) and the Open Vector Lift"
 type: software
 authors:
   - family-names: "Beau"
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/spectral-o27"
 url: "https://cosmochrony.org/science/spectral/program/o27/"
-version: "1.16"
+version: "2.0"
 doi: "10.5281/zenodo.19489296"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "Quaternionic Rigidity of Admissible Morphisms: Every Admissible \Phi_q, Necessarily Factors through su (2)"
+  title: "Admissible Morphisms on the Weil Pair Sector: The su(2) Action on End(Vρ) and the Open Vector Lift"
   authors:
     - family-names: "Beau"
       given-names: "Jérôme"
