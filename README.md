@@ -45,10 +45,10 @@ What is not proved, and is stated as such:
 
 ## Context
 
-**O16--O26** established that:
+**O16--O26** provide:
 
-- the correct observable is the canonical pair quantity
-  $\sigma_{\mathrm{pair}}^{\mathrm{can}}(n)$
+- the pair observable $\sigma_c(n)\,\sigma_{q-c}(n)$ used here, uncorrected (the canonical
+  normalisation proposed in **O19** has open tests)
 - the reference value $\delta_{\mathrm{pair}} \approx 7.44$ lies in the historical
   phenomenological window $[7.4, 10.6]$
 - vertical fibre structure does not change the observable rank (**O24**)
