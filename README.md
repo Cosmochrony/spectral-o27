@@ -180,7 +180,8 @@ has arrows of unequal type:
 ### Established input
 
 - pair observable (**O16--O21**)
-- conjugation identity and normalisation (**O17--O19**; fibre identification open, **O18**)
+- conjugation identity (**O17**); the canonical normalisation of **O19** is an open proposal (the pair
+  observable used here is uncorrected); fibre identification open (**O18**)
 - projection locking (**O22**)
 - conditional rank-three carrier (**O23** Theorem 3.1, supplied spinor carrier)
 - rank stability (**O24**)
